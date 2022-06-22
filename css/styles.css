@@ -360,3 +360,46 @@ h4{
         justify-content: space-between;
     }
 }
+
+/* -------Banners web--------- */
+
+.bannerTurnos{
+    background: url(../imagenes/Turno.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    background-position: center;
+}
+
+.bannerMapa{
+    background: url(../imagenes/Mapa.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100vw;
+    height: 50vh;   
+}
+
+.bannerProfesionales{
+    background: url(../imagenes/profecionales.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    background-position: center;
+}
+
+.bannerEspecialidades{
+    background: url(../imagenes/elementos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    background-position: center;
+}
+
+.bannerContacto{
+    background: url(../imagenes/contacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    background-position: center;
+}
