@@ -361,10 +361,29 @@ h4{
     }
 }
 
+/* ------------ web ------------ */
+
+h3{
+    color: midnightblue;
+    font-size: 30px;
+}
+
+p{
+    color: darkred;
+    font-weight: bolder;
+}
+
+form{
+    text-align: center;
+    color: rgb(28, 22, 110);
+    font-weight: bolder;
+}
+
+
 /* -------Banners web--------- */
 
 .bannerTurnos{
-    background: url(../imagenes/Turno.jpg);
+    background: url(../img/turno.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 50vh;
@@ -372,7 +391,7 @@ h4{
 }
 
 .bannerMapa{
-    background: url(../imagenes/Mapa.jpg);
+    background: url(../img/mapa.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -381,7 +400,7 @@ h4{
 }
 
 .bannerProfesionales{
-    background: url(../imagenes/profecionales.jpg);
+    background: url(../img/profecionales.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 50vh;
@@ -389,7 +408,7 @@ h4{
 }
 
 .bannerEspecialidades{
-    background: url(../imagenes/elementos.jpg);
+    background: url(../img/elementos.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 50vh;
@@ -397,7 +416,7 @@ h4{
 }
 
 .bannerContacto{
-    background: url(../imagenes/contacto.jpg);
+    background: url(../img/contacto.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 70vh;
