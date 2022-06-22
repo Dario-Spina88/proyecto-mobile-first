@@ -7,7 +7,7 @@
 }
 
 body{
-    background-image: url(../imagenes/fondo.jpg);
+    background-image: url(../img/fondo.jpg);
     background-position: no-repeat;
 }
 
@@ -114,7 +114,7 @@ a:hover{
 /* -------------------BANNER INDEX--------------- */
 
 .banner{
-    background-image: url(../imagenes/prevenir.jpg);
+    background-image: url(../img/prevenir.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
