@@ -39,7 +39,7 @@ a {
 /* ---------------------HEADER----------------- */
 
 header{
-    background-color: rgba(172, 209, 151, 0.897);
+    background: linear-gradient(79deg, rgba(2,0,36,1) 0%, rgba(3,146,212,0.8127626050420168) 57%, rgba(0,212,255,1) 100%);
     color: rgb(26, 33, 39);
     position: sticky;
     top: 0;
@@ -69,7 +69,7 @@ nav ul li a{
 }
 
 a:hover{
-    color: coral;
+    color: rgb(235, 225, 222);
 }
 
 /* ---------------- LOGO -------------------- */
@@ -98,16 +98,16 @@ a:hover{
 /*------------------ TITULO H1 ------------------ */
 
 #titulo{
-    font-size: 1rem;
+    background: linear-gradient(8deg, rgba(177,174,238,1) 0%, rgba(178,233,148,1) 100%);
+    text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+    font-size: 1.2rem;
     display: flex;
     text-align: center;
     justify-content: center;
-    background-color: rgba(184, 190, 202, 0.886);
-    color: rgb(162, 113, 123);
     height: fit-content;
     margin: 1px;
     border-radius: 15px;
-    border-bottom: solid 5px rgb(24, 18, 18);
+    box-shadow:10px 0px 20px 5px black;
     grid-area: h1;
 }
 
@@ -125,6 +125,7 @@ a:hover{
     align-content:space-between;
     font-weight: bolder;
     grid-area: banner;
+    box-shadow: 10px 0px 20px 5px black;
 }
 
 .banner h2{
@@ -146,7 +147,6 @@ a:hover{
 /* -----------------NOSOTROS----------------- */
 
 #seccion-nosotros{
-    border-color: rgb(117, 114, 110);
     padding-top: 10px;
     grid-area: nosotros;
     display: flex;
@@ -155,6 +155,7 @@ a:hover{
     border-top: 20px solid black;
     border-bottom: 20px solid black;
     border-radius: 15px;
+    box-shadow: 10px 10px 10px black;
 }
 
 .nosotros__img img{
@@ -165,8 +166,8 @@ a:hover{
 .nosotros__titulo{
     background-color: rgba(116, 150, 97, 0.705);
     border-radius: 15px;
-    border-bottom: solid 1px black;
     font-size: 2.5rem;
+    box-shadow:10px 10px 20px rgb(57, 148, 49);
 }
 
 .nosotros__parrafo {
@@ -187,7 +188,7 @@ a:hover{
     border-top: 20px solid rgb(128, 79, 6);
     border-bottom: 20px solid rgb(128, 79, 6);
     border-radius: 15px;
-
+    box-shadow: 10px 10px 10px black;
 }
 
 .contenedor img{
@@ -199,6 +200,7 @@ aside h2{
     background: rgba(231, 161, 135, 0.808);
     border-radius: 15px;
     color: rgb(0, 0, 0);
+    box-shadow:10px 10px 20px rgb(156, 97, 82);
 }
 
 .contenedor__text{
@@ -225,6 +227,7 @@ aside h2{
 /* ------------------- FOOTER ------------------- */
 
 footer{
+    background: radial-gradient(circle, rgba(237,215,215,1) 0%, rgba(10,3,3,1) 60%);
     gap: 20px;
     font-size: 1.5rem;
     color: rgb(4, 7, 10);
@@ -273,7 +276,6 @@ h4{
 
     #titulo{
         background-color: rgba(184, 190, 202, 0.886);
-        color: rgb(162, 113, 123);
         height: fit-content;
         justify-content: center;
         font-size: 1.5rem;
@@ -285,11 +287,10 @@ h4{
         padding-top: 20px;
         border-radius: 15px;
         text-align: center;
-        overflow: scroll;
     }
 
     .nosotros__img img{
-        width: 55%;
+        width: 100%;
     }
 
     /*---------------------- aside -----------------------*/
@@ -330,6 +331,21 @@ h4{
         font-size: 1rem;
     }
 
+    #seccion-nosotros{
+        padding-top: 20px;
+        border-radius: 15px;
+        text-align: center;
+        overflow: scroll;
+    }
+
+    .contenedor{
+        text-align: start;
+    }
+
+    footer{
+        background: linear-gradient(180deg, rgba(237,215,215,1) 0%, rgba(10,3,3,1) 60%);
+    }
+
     footer ul{
         font-size: 1.5rem;
         display: flex;
@@ -353,23 +369,65 @@ h4{
         font-size: 1.5rem;
     }
 
+    #seccion-nosotros{
+        height: 100%;
+        text-align: start;
+    }
+
+
+
+    .nosotros__img img{
+        width: 80%;
+    }
+
     footer ul{
-        font-size: 2rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 }
 
-/* ------------ web ------------ */
+/* ------------ Contacto ------------ */
+
+.contenedor-contacto{
+    gap: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #110a0a;
+background: #b8b8b8;
+text-shadow: 4px 4px 5px #7A7A7A;
+}
+
+.bannerContacto{
+    background: url(../img/contacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 40vh;
+    border-radius: 15px;
+    box-shadow: 10px 0px 20px 5px black;
+}
+
+.texto-contacto{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* -------------- WEB--------------- */
+
+
 
 h3{
     color: midnightblue;
     font-size: 30px;
 }
 
-p{
-    color: darkred;
+span, h4{
+    color: rgb(191, 11, 197);
     font-weight: bolder;
 }
 
@@ -412,13 +470,5 @@ form{
     background-repeat: no-repeat;
     background-size: cover;
     height: 50vh;
-    background-position: center;
-}
-
-.bannerContacto{
-    background: url(../img/contacto.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 70vh;
     background-position: center;
 }
