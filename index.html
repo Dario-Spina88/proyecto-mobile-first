@@ -7,10 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconectar" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- tipografia -->
     <link
         href="https: //fonts.googleapis.com/css2? family= Roboto:ital,wght@0,100;0,400;0,700;1,300 & family= Stardos+Stencil:wght@400;700 & display=swap"
         rel="stylesheet">
+    <!-- imagen iconos -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!-- animacion -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- imagen de logo -->
     <link rel="shortcut icon" href="./img/diente-icono.png">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Inicio - Odontologia Integral</title>
@@ -40,7 +45,7 @@
         </section>
         <!------------------ Empieza el cuerpo de la web ---------------->
         <main id="main-index">
-            <section class="banner">
+            <section class="banner" data-aos="zoom-in">
                 <h2>La prevención <span>el mejor remedio</span></h2>
                 <div>
                     <article>
@@ -54,7 +59,7 @@
                 </div>
             </section>
             <!---------------------- Nosotoros------------------------>
-            <Section id="seccion-nosotros">
+            <Section id="seccion-nosotros" data-aos="fade-right">
                 <div clas="nosotros">
                     <H2 class="nosotros__titulo">Nosotros</H2>
                     <article>
@@ -88,7 +93,7 @@
 
             <!--------------------------- ASIDE -------------------------->
 
-            <aside class="contenedor">
+            <aside class="contenedor" data-aos="fade-left">
 
                 <div class="contenedor-lineamedia">
 
@@ -134,41 +139,44 @@
 
             <!------------------------- BOTON SUBIR --------------------------->
 
-                <a href="#titulo" class="subir">Subir</a>
-            </div>
+            <a href="#titulo" class="subir">Subir</a>
+</div>
 
-        </main>
+</main>
 
-        <!--------------------------------- FOOTER --------------------->
+<!--------------------------------- FOOTER --------------------->
 
-        <footer>
+<footer>
 
-            <ul>
-                <span><b>Seguinos en nuestras redes</b></span>
-                <div>
-                    <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-                    <i class="bi-instagram"></i>
-                </div>
-                <div>
-                    <li><a href="https://es-la.facebook.com/" target="_blank">Facebook</a></li>
-                    <i class="bi-facebook"></i>
-                </div>
-                <div>
-                    <li><a href="https://www.whatsapp.com" target="_blank">Contacto</a></li>
-                    <i class="bi-whatsapp"></i>
-                </div>
-                <div>
-                    <li><a href="https://mapa.buenosaires.gob.ar/" target="_blank">Como llegar</a></li>
-                    <i class="bi bi-geo-alt"></i>
-                </div>
-            </ul>
+    <ul>
+        <span><b>Seguinos en nuestras redes</b></span>
+        <div>
+            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+            <i class="bi-instagram"></i>
+        </div>
+        <div>
+            <li><a href="https://es-la.facebook.com/" target="_blank">Facebook</a></li>
+            <i class="bi-facebook"></i>
+        </div>
+        <div>
+            <li><a href="https://www.whatsapp.com" target="_blank">Contacto</a></li>
+            <i class="bi-whatsapp"></i>
+        </div>
+        <div>
+            <li><a href="https://mapa.buenosaires.gob.ar/" target="_blank">Como llegar</a></li>
+            <i class="bi bi-geo-alt"></i>
+        </div>
+    </ul>
 
-            <h4>Copyright - Todos los derechos reservados</h4>
+    <h4>Copyright - Todos los derechos reservados</h4>
 
 
-        </footer>
-
-    </body>
+</footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
 
 </div>
 
