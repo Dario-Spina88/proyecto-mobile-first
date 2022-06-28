@@ -7,12 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconectar" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- tipografia -->
     <link
         href="https: //fonts.googleapis.com/css2? family= Roboto:ital,wght@0,100;0,400;0,700;1,300 & family= Stardos+Stencil:wght@400;700 & display=swap"
         rel="stylesheet">
+    <!-- imagen iconos -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <link rel="shortcut icon" href="../img/diente-icono.png">
-    <link rel="stylesheet" href="../css/styles.css">
+    <!-- animacion -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- imagen de logo -->
+    <link rel="shortcut icon" href="./img/diente-icono.png">
+    <!-- links CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Turnos</title>
 </head>
 
@@ -38,17 +45,15 @@
 
     <!--------------- Contacto ------------------>
 
-    <main class="contenedor-contacto">
+    <main>
 
         <div class="bannerContacto"></div>
 
         <section>
+            <h2><i>Contacto</i></h2>
 
-            <div>
-                <h2 class="web"><i>Contacto</i></h2>
-
-                <article class="texto-contacto">
-                    <pre>
+            <article>
+                <pre>
                 En cumplimiento de estrictos protocolos COVID-19
 
                 Central de turnos para adultos
@@ -78,14 +83,14 @@
                 e-mail: ejemplo@email.com
 
                 </pre>
-                </article>
+            </article>
 
-                <hr>
+            <hr>
 
-                <!--------------- Formulario ------------------>
+            <!--------------- Formulario ------------------>
 
-                <form>
-                    <pre>
+            <form>
+                <pre>
                 <label for="campo-apellido">Nombre y Apellido</label>
                 <input type="text" name="campo-apellido" id="campo-apellido" placeholder="Nombre y Apellido">
 
@@ -100,8 +105,7 @@
                 <input type="submit" value="Enviar mensaje">
                 <input type="reset" value="Borrar formulario" id="">
                 </pre>
-                </form>
-            </div>
+            </form>
         </section>
 
         <a href="#titulo" class="subir">Subir</a>
@@ -135,6 +139,12 @@
 
     </footer>
 
+    <!-- Links JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./js/bootstrap.js"></script>
 </body>
 
 </html>
