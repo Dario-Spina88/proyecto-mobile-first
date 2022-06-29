@@ -18,39 +18,61 @@
     <!-- imagen de logo -->
     <link rel="shortcut icon" href="./img/diente-icono.png">
     <!-- links CSS -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Turnos</title>
 </head>
 
+<!--------------------- Header ---------------->
+
 <body>
-    <header>
-        <div class="encabezado-imagen">
-            <img src="../img/diente.jpg" alt="Diente brillante">
+    <header class="navbar navbar-expand-lg bg-light rounded-4">
+        <div class="container">
+            <a class="navbar-brand"><img src="../img/diente.jpg" alt="Diente brillante" class="w-75"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <nav class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./turnos.html">Turnos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Mas
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="./especialidades.html">Especialidades</a></li>
+                            <li><a class="dropdown-item" href="./profesionales.html">Profesionales</a></li>
+                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./turnos.html">Turnos</a></li>
-                <li><a href="./profesionales.html">Profesionales</a></li>
-                <li><a href="./especialidades.html">Especialidades</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
     </header>
     <!-------------------------- TITULO H1 ----------------------->
     <section id="titulo">
-        <h1>ODONTOLOGIA INTEGRAL</h1>
+        <h1 class="display-1 fw-bold text-center py-3">ODONTOLOGIA INTEGRAL</h1>
     </section>
 
-    <div class="bannerTurnos">
-    </div>
+    <main>
 
-    <section>
-        <h2><i>Turno Online, Facil y Rapido</i></h2>
+        <div class="bannerTurnos">
+        </div>
 
-        <article>
-            <pre>
+        <section>
+            <h2><i>Turno Online, Facil y Rapido</i></h2>
+
+            <article>
+                <pre>
                     CABA Calle 9 de julio - Barrio Palermo 
                     
                     CP12354 - CABA - Buenos Aires - Argentina 
@@ -61,16 +83,16 @@
                     
                     CONTACTO 1512345678
                 </pre>
-        </article>
+            </article>
 
-        <h3>Mapa</h3>
+            <h3>Mapa</h3>
 
-        <div class="bannerMapa"></div>
+            <div class="bannerMapa"></div>
 
-        <!-----------Formulario--------->
+            <!-----------Formulario--------->
 
-        <form>
-            <pre>
+            <form>
+                <pre>
                 <label for="campo-apellido">Nombre y Apellido:</label>
                 <input type="text" name="campo-apellido" id="campo-apellido" placeholder="Nombre y Apellido" required>
 
@@ -110,12 +132,12 @@
                 <input type="submit" value="Enviar mensaje">
                 <input type="reset" value="Borrar formulario" id="">
                 </pre>
-        </form>
-    </section>
+            </form>
+        </section>
 
-    <div>
-        <a href="#titulo">Subir</a>
-    </div>
+        <div>
+            <a href="#titulo">Subir</a>
+        </div>
 
 
     </main>
@@ -152,7 +174,7 @@
     <script>
         AOS.init();
     </script>
-    <script src="./js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

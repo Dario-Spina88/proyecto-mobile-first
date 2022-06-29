@@ -5,15 +5,60 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/* .banner{
-    background-image: url(../img/prevenir.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
-
-.navbar{
-background:linear-gradient(79deg, rgba(2, 0, 36, 1) 0%, rgba(3, 146, 212, 0.8127626050420168) 57%, rgba(0, 212, 255, 1) 100%);
-position: sticky;
-top: 0;
-z-index: 2;
+ul {
+    list-style: none;
 }
+
+li{
+    list-style: none;
+}
+
+.c-violeta {
+    color: rgb(36, 30, 117);
+}
+
+/*----------Navegador---------- */
+.navbar {
+    background: linear-gradient(79deg, rgba(2, 0, 36, 1) 0%, rgba(3, 146, 212, 0.8127626050420168) 57%, rgba(0, 212, 255, 1) 100%);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.navbar-brand{
+    position: relative;
+    animation-name: logoEnMovimiento;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes logoEnMovimiento{
+    0%{
+        left: -150px;
+    }
+    
+    100%{
+        left: 150px;
+    }
+}
+
+/*-----------Boton subir------------ */
+.subir a {
+    transition: 1s;
+}
+
+.subir a:hover {
+    background-color: rgb(27, 112, 79);
+}
+
+/* -----------footer------------ */
+
+footer{
+    background-color: rgb(85, 156, 132);
+}
+
+footer ul li:hover{
+    transform: scale(1.5);
+    transition: all 1s linear;
+}
+
