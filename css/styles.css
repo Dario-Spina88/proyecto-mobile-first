@@ -4,3 +4,16 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
+/* .banner{
+    background-image: url(../img/prevenir.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.navbar{
+background:linear-gradient(79deg, rgba(2, 0, 36, 1) 0%, rgba(3, 146, 212, 0.8127626050420168) 57%, rgba(0, 212, 255, 1) 100%);
+position: sticky;
+top: 0;
+z-index: 2;
+}

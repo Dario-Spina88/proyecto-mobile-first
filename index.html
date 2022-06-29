@@ -22,24 +22,43 @@
     <link rel="stylesheet" href="./css/styles.css">
     <title>Inicio - Odontologia Integral</title>
 </head>
-<!--------------------------- NAVEGADOR ---------------------------->>
+<!--------------------------- NAVEGADOR ---------------------------->
 
 <body>
-    <header>
-        <div class="encabezado-imagen">
-            <img src="./img/diente.jpg" alt="Diente brillante">
-        </div>
+    <header class="navbar navbar-expand-lg bg-light rounded-4">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="./img/diente.jpg" alt="Diente brillante" class="w-75"></a>
 
-        <nav>
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="#seccion-nosotros">Nosotros</a></li>
-                <li><a href="./page/turnos.html">Turnos</a></li>
-                <li><a href="./page/profesionales.html">Profesionales</a></li>
-                <li><a href="./page/especialidades.html">Especialidades</a></li>
-                <li><a href="./page/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <nav class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Mas
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Especialidades</a></li>
+                            <li><a class="dropdown-item" href="#">Profesionales</a></li>
+                            <li><a class="dropdown-item" href="#">Turnos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <!-------------------------- TITULO H1 ----------------------->
     <section id="titulo">
@@ -47,7 +66,16 @@
     </section>
     <!------------------ Empieza el cuerpo de la web ---------------->
     <main>
-        <section data-aos="zoom-in">
+        <section class="card bg-dark text-white">
+            <img src="./img/prevenir.jpg" class="card-img   " alt="dos personas cepillandose los dientes">
+            <article class="card-img-overlay">
+                <h2 class="card-title">La prevención <span>el mejor remedio</span></h2>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional
+                    content. This content is a little bit longer.</p>
+            </article>
+        </section>
+        <!-- <section class="banner" data-aos="zoom-in">
             <h2>La prevención <span>el mejor remedio</span></h2>
 
             <article>
@@ -59,7 +87,7 @@
                 </p>
             </article>
 
-        </section>
+        </section> -->
         <!---------------------- Nosotoros------------------------>
         <Sectiondata-aos="fade-right">
 
