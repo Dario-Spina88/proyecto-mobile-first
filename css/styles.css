@@ -81,13 +81,6 @@ footer ul li:hover {
 }
 
 /* ----------------Turnos------------ */
-/* .titulo-turno{
-    background: linear-gradient(rgb(85, 156, 132),rgba(0, 212, 255, 1));
-} */
-
-/* .text-turno{
-    background: linear-gradient(rgba(0, 212, 255, 1),  rgb(85, 156, 132));
-} */
 
 .section-turnos{
     /* padding-bottom: 20px; */
@@ -109,4 +102,13 @@ footer ul li:hover {
 
 .container:hover .card-map {
     clip-path: circle(100%);
+}
+
+/* --------------Especialidades---------------- */
+
+.cards-espe{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
 }
