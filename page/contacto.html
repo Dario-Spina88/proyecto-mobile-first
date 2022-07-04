@@ -35,10 +35,10 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <nav class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <nav class="collapse navbar-collapse justify-content-end fs-4" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./turnos.html">Turnos</a>
@@ -67,50 +67,57 @@
 
     <main>
 
-        <div class="bannerContacto"></div>
+        <div>
+            <section class="card bg">
+                <div>
+                    <img src="../img/contacto.jpg" class="card-img " alt="Contacto">
+                </div>
+                <div class="card-img-overlay d-flex flex-column justify-content-center text-center">
+                    <h2 class="card-title c-violeta display-1 fw-bold">Contacto</h2>
+                </div>
+            </section>
+        </div>
 
-        <section>
-            <h2><i>Contacto</i></h2>
+
+        <section class="row-lg-6">
+            <h2 class="text-decoration-underline"><i>Contacto</i></h2>
 
             <article>
                 <pre>
-                En cumplimiento de estrictos protocolos COVID-19
+En cumplimiento de estrictos protocolos COVID-19
 
-                Central de turnos para adultos
+Central de turnos para adultos
 
-                Admisión pacientes de 1a vez
+Admisión pacientes de 1a vez
 
-                Mensajes de Whatsapp
+Mensajes de Whatsapp
 
-                1234567878
+1234567878
 
-                Pacientes en atención
+Pacientes en atención
 
-                4123-1232
+4123-1232
 
-                e-mail: ejemplo@email.com
+e-mail: ejemplo@email.com
 
-                Central de turnos para niños
+Central de turnos para niños
 
-                Mensajes de Whatsapp
+Mensajes de Whatsapp
 
-                1234567878
+1234567878
 
-                Pacientes en atención
+Pacientes en atención
 
-                4123-1232
+4123-1232
 
-                e-mail: ejemplo@email.com
-
-                </pre>
+e-mail: ejemplo@email.com</pre>
             </article>
 
-            <hr>
+    <!------------------------- Formulario ------------------------------>
 
-            <!--------------- Formulario ------------------>
-
-            <form>
-                <pre>
+            <div class="row-lg-6">
+                <form>
+                    <pre>
                 <label for="campo-apellido">Nombre y Apellido</label>
                 <input type="text" name="campo-apellido" id="campo-apellido" placeholder="Nombre y Apellido">
 
@@ -125,61 +132,70 @@
                 <input type="submit" value="Enviar mensaje">
                 <input type="reset" value="Borrar formulario" id="">
                 </pre>
-            </form>
+                </form>
+            </div>
         </section>
 
         <!------------------------- BOTON SUBIR --------------------------->
 
-        <div class="subir d-grid gap-2 col-6 mx-auto pb-3">
+        <div class="subir d-grid gap-2 col-6 mx-auto pb-5">
             <a href="#titulo" class="btn btn-outline-success me-md-2">Subir</a>
         </div>
     </main>
 
-    <!--------------------------------- FOOTER --------------------->
+    <!--------------------------------- FOOTER ------------------------------>
 
     <footer class="conteiner-fluid">
 
         <div class="conteiner border-bottom p-3">
 
-            <div class="px-4">
+            <div class="row col-12 px-4 text-center d-flex align-items-center">
 
-                <h4 class=" my-3 text-center">
-                    <b>Seguinos en nuestras redes</b>
-                </h4>
-
-                <div class="row d-flex text-center justify-content-around">
-
-                    <ul>
-                        <div>
-                            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-                            <i class="bi-instagram"></i>
-                        </div>
-
-                        <div>
-                            <li><a href="https://es-la.facebook.com/" target="_blank">Facebook</a></li>
-                            <i class="bi-facebook"></i>
-                        </div>
-
-                        <div>
-                            <li><a href="https://www.whatsapp.com" target="_blank">Contacto</a></li>
-                            <i class="bi-whatsapp"></i>
-                        </div>
-                        <div>
-                            <li><a href="https://mapa.buenosaires.gob.ar/" target="_blank">Como llegar</a></li>
-                            <i class="bi bi-geo-alt"></i>
-                        </div>
+                <div class="container  col-4 col-sm-4 col-ms-4">
+                    <a class="img-nav"><img src="../img/diente.jpg" alt="Diente brillante" class="w-15"></a>
                 </div>
-                </ul>
+
+
+                <div class="col-12 col-sm-8 col-md-8">
+                    <h4 class=" my-3 text-center">
+                        <b>Seguinos en nuestras redes</b>
+                    </h4>
+                </div>
+
+    <!----------------------------------- Redes -------------------------------->
+
+                <div class="row col-12 col-sm-12 col-md-12 d-flex text-center justify-content-around align-items-center">
+
+                    <ul class="row">
+                        <div class="col-12 col-md-3">
+                            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                            <i class="bi-instagram fs-3"></i>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <li><a href="https://es-la.facebook.com/" target="_blank">Facebook</a></li>
+                            <i class="bi-facebook fs-3"></i>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <li><a href="https://www.whatsapp.com" target="_blank">Contacto</a></li>
+                            <i class="bi-whatsapp fs-3"></i>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <li><a href="https://mapa.buenosaires.gob.ar/" target="_blank">Como llegar</a></li>
+                            <i class="bi bi-geo-alt fs-3"></i>
+                        </div>
+                    </ul>
+                </div>
             </div>
         </div>
 
         <div class="text-center">
-            <p class="col-12 text-center ">Copyright - Todos los derechos reservados</p>
+            <p class="col-12 text-center fs-4">Copyright - Todos los derechos reservados</p>
         </div>
     </footer>
 
 
-    <!-- Links JS -->
+    <!------------------------ Links JS --------------------------->
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

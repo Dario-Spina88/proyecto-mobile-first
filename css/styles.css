@@ -9,12 +9,17 @@ ul {
     list-style: none;
 }
 
-li{
+li {
     list-style: none;
 }
 
 .c-violeta {
-    color: rgb(36, 30, 117);
+    color: rgb(138, 10, 170);
+}
+
+.card img{
+    height: fit-content;
+    height: 500px;
 }
 
 /*----------Navegador---------- */
@@ -25,19 +30,28 @@ li{
     z-index: 2;
 }
 
-.navbar-brand{
+.navbar-brand {
     position: relative;
     animation-name: logoEnMovimiento;
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
 
-@keyframes logoEnMovimiento{
-    0%{
+.nav-link, .dropdown-item{
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+
+.dropdown-item{
+    color: black;
+}
+
+@keyframes logoEnMovimiento {
+    0% {
         left: -150px;
     }
-    
-    100%{
+
+    100% {
         left: 150px;
     }
 }
@@ -53,14 +67,46 @@ li{
 
 /* -----------footer------------ */
 
-footer{
+footer {
     background-color: rgb(85, 156, 132);
 }
 
-footer ul li:hover{
+footer a{
+    font-size: 1.5rem;
+}
+
+footer ul li:hover {
     transform: scale(1.5);
     transition: all 1s linear;
 }
 
-/* Turnos */
+/* ----------------Turnos------------ */
+/* .titulo-turno{
+    background: linear-gradient(rgb(85, 156, 132),rgba(0, 212, 255, 1));
+} */
 
+/* .text-turno{
+    background: linear-gradient(rgba(0, 212, 255, 1),  rgb(85, 156, 132));
+} */
+
+.section-turnos{
+    /* padding-bottom: 20px; */
+    background: linear-gradient(rgba(0, 212, 255, 1),  rgb(162, 212, 196));
+}
+
+/* ---------------Mapa------------- */
+
+.card-map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    clip-path: circle(30%);
+    transition-property: clip-path;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+
+.container:hover .card-map {
+    clip-path: circle(100%);
+}

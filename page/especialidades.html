@@ -35,10 +35,10 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <nav class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <nav class="collapse navbar-collapse justify-content-end fs-4" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./turnos.html">Turnos</a>
@@ -65,81 +65,118 @@
         <h1 class="display-1 fw-bold text-center py-3">ODONTOLOGIA INTEGRAL</h1>
     </section>
 
-    <!-- Tabla de equipo profecional -->
+    <!--------------------- Tabla de equipo profecional -------------->
     <main>
 
-        <div class="bannerEspecialidades"></div>
+        <div>
+            <section class="card bg">
+                <div>
+                    <img src="../img/elementos.jpg" class="card-img " alt="especialidades">
+                </div>
+                <div class="card-img-overlay d-flex flex-column justify-content-center text-center">
+                    <h2 class="card-title c-violeta display-1 fw-bold">Especialidades</h2>
+                </div>
+            </section>
+        </div>
 
-        <h2><i>Especialidades</i></h2>
-        <hr>
+        <!---------------------- Tarjetas especialidades ------------------>
 
-        <section>
+        <h2 class="display-3 text-center text-decoration-underline py-5"><i>Especialidades</i></h2>
 
-            <img src="../imagenes/especialidad-endodoncia.jpg" alt="endodoncia" width="400">
+        <section class="container">
+            <div class="row">
 
-            <h3>Endodoncia</h3>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores ducimus eaque odio veniam. <br>
-                Blanditiis minus eos quaerat reprehenderit error ipsam atque hic obcaecati, quidem maiores debitis
-                corrupti voluptatibus veritatis fuga?
-            </p>
-            <hr>
+                <div class="col-12 col-md-6 p-3">
+                    <article class="card-esp text-center rounded-4 shadow-lg border border-dark p-3 h-100 bg-danger"
+                        style="width: 22rem;">
+                        <img src="../img/especialidad-implantes.jpg"
+                            class="card-img-top border-bottom border-dark rounded-4" alt="implante">
+                        <div class="card-body">
+                            <h5 class="card-title p-3">Implante</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card's content.</p>
+                        </div>
+                    </article>
+                </div>
 
-            <img src="../imagenes/especialidad-implantes.jpg" alt="implante" width="400">
+                <div class="col-12 col-md-6 p-3">
+                    <article class="card-esp text-center rounded-4 shadow-lg border border-dark p-3 h-100 bg-primary"
+                        style="width: 22rem;">
+                        <img src="../img/especialidad-limpieza.jpg" class="card-img-top rounded-4" alt="limpieza">
+                        <div class="card-body">
+                            <h5 class="card-title p-3">Limpieza</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card's content.</p>
+                        </div>
+                    </article>
+                </div>
 
-            <h3>Implante</h3>
+                <div class="col-12 col-md-6 p-3">
+                    <article class="card-esp text-center rounded-4 shadow-lg border border-dark p-3 h-100 bg-success"
+                        style="width: 22rem;">
+                        <img src="../img/especialidad-ortodoncia.jpg" class="card-img-top rounded-4" alt="ortodoncia">
+                        <div class="card-body">
+                            <h5 class="card-title p-3">Ortodoncia</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card's content.</p>
+                        </div>
+                    </article>
+                </div>
 
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores ducimus eaque odio veniam. <br>
-                Blanditiis minus eos quaerat reprehenderit error ipsam atque hic obcaecati, quidem maiores debitis
-                corrupti voluptatibus veritatis fuga?
-            </p>
-            <hr>
+                <div class="col-12 col-md-6 p-3">
+                    <article class="card-esp text-center rounded-4 shadow-lg border border-dark p-3 h-100 bg-info"
+                        style="width: 22rem;">
+                        <img src="../img/especialidad-pedriatrica.jpg" class="card-img-top rounded-4" alt="pediatria">
+                        <div class="card-body">
+                            <h5 class="card-title p-3">Pediatria</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card's content.</p>
+                        </div>
+                    </article>
+                </div>
 
-            <img src="../imagenes/especialidad-limpieza.jpg" alt="limpieza de dientes" width="400">
+                <div class="col-12 col-md-6 p-3">
+                    <article class="card-esp text-center rounded-4 shadow-lg border border-dark p-3 h-100 bg-secondary"
+                        style="width: 22rem;">
+                        <img src="../img/especialidad-endodoncia.jpg" class="card-img-top border border-dark rounded-4"
+                            alt="endodoncia">
+                        <div class="card-body">
+                            <h5 class="card-title p-3">Endodoncia</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card's content.</p>
+                        </div>
+                    </article>
+                </div>
 
-            <h3>Limpieza</h3>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores ducimus eaque odio veniam. <br>
-                Blanditiis minus eos quaerat reprehenderit error ipsam atque hic obcaecati, quidem maiores debitis
-                corrupti voluptatibus veritatis fuga?
-            </p>
-            <hr>
-
-            <img src="../imagenes/especialidad-ortodoncia.jpg" alt="ortodoncia" width="400">
-
-            <h3>Ortodoncia</h3>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores ducimus eaque odio veniam. <br>
-                Blanditiis minus eos quaerat reprehenderit error ipsam atque hic obcaecati, quidem maiores debitis
-                corrupti voluptatibus veritatis fuga?
-            </p>
-            <hr>
-
-            <img src="../imagenes/especialidad-pedriatrica.jpg" alt="pediatria" width="400">
-
-            <h3>Pediatria</h3>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores ducimus eaque odio veniam. <br>
-                Blanditiis minus eos quaerat reprehenderit error ipsam atque hic obcaecati, quidem maiores debitis
-                corrupti voluptatibus veritatis fuga?
-            </p>
-            <hr>
-
-            <img src="../imagenes/especialidad-radiografia.jpg" alt="radiografia" width="400">
-
-            <h3>Radriografia</h3>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores ducimus eaque odio veniam. <br>
-                Blanditiis minus eos quaerat reprehenderit error ipsam atque hic obcaecati, quidem maiores debitis
-                corrupti voluptatibus veritatis fuga?
-            </p>
-
+                <div class="col-12 col-md-6 p-3">
+                    <article class="card-esp text-center rounded-4 shadow-lg border border-dark p-3 h-100 bg-warning"
+                        style="width: 22rem;">
+                        <img src="../img/especialidad-radiografia.jpg" class="card-img-top rounded-4" alt="radiografia">
+                        <div class="card-body">
+                            <h5 class="card-title p-3">Radriografia</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card's content.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
 
         <!------------------------- BOTON SUBIR --------------------------->
 
-        <div class="subir d-grid gap-2 col-6 mx-auto pb-3">
+        <div class="subir d-grid gap-2 col-6 mx-auto p-4">
             <a href="#titulo" class="btn btn-outline-success me-md-2">Subir</a>
         </div>
 
@@ -151,40 +188,47 @@
 
         <div class="conteiner border-bottom p-3">
 
-            <div class="px-4">
+            <div class="row col-12 px-4 text-center d-flex align-items-center">
 
-                <h4 class=" my-3 text-center">
-                    <b>Seguinos en nuestras redes</b>
-                </h4>
-
-                <div class="row d-flex text-center justify-content-around">
-
-                    <ul>
-                        <div>
-                            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-                            <i class="bi-instagram"></i>
-                        </div>
-
-                        <div>
-                            <li><a href="https://es-la.facebook.com/" target="_blank">Facebook</a></li>
-                            <i class="bi-facebook"></i>
-                        </div>
-
-                        <div>
-                            <li><a href="https://www.whatsapp.com" target="_blank">Contacto</a></li>
-                            <i class="bi-whatsapp"></i>
-                        </div>
-                        <div>
-                            <li><a href="https://mapa.buenosaires.gob.ar/" target="_blank">Como llegar</a></li>
-                            <i class="bi bi-geo-alt"></i>
-                        </div>
+                <div class="container  col-4 col-sm-4 col-ms-4">
+                    <a class="img-nav"><img src="../img/diente.jpg" alt="Diente brillante" class="w-15"></a>
                 </div>
-                </ul>
+
+
+                <div class="col-12 col-sm-8 col-md-8">
+                    <h4 class=" my-3 text-center">
+                        <b>Seguinos en nuestras redes</b>
+                    </h4>
+                </div>
+
+                <!------------------------ Redes -------------------->
+
+                <div class="row col-12 col-sm-12 col-md-12 d-flex text-center justify-content-around align-items-center">
+
+                    <ul class="row">
+                        <div class="col-12 col-md-3">
+                            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                            <i class="bi-instagram fs-3"></i>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <li><a href="https://es-la.facebook.com/" target="_blank">Facebook</a></li>
+                            <i class="bi-facebook fs-3"></i>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <li><a href="https://www.whatsapp.com" target="_blank">Contacto</a></li>
+                            <i class="bi-whatsapp fs-3"></i>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <li><a href="https://mapa.buenosaires.gob.ar/" target="_blank">Como llegar</a></li>
+                            <i class="bi bi-geo-alt fs-3"></i>
+                        </div>
+                    </ul>
+                </div>
             </div>
         </div>
 
         <div class="text-center">
-            <p class="col-12 text-center ">Copyright - Todos los derechos reservados</p>
+            <p class="col-12 text-center fs-4">Copyright - Todos los derechos reservados</p>
         </div>
     </footer>
 
