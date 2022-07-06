@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 ul {
@@ -17,7 +18,7 @@ li {
     color: rgb(138, 10, 170);
 }
 
-.card img{
+.card img {
     height: fit-content;
     height: 500px;
 }
@@ -37,12 +38,13 @@ li {
     animation-iteration-count: infinite;
 }
 
-.nav-link, .dropdown-item{
+.nav-link,
+.dropdown-item {
     color: aliceblue;
     font-size: 1.5rem;
 }
 
-.dropdown-item{
+.dropdown-item {
     color: black;
 }
 
@@ -71,7 +73,7 @@ footer {
     background-color: rgb(85, 156, 132);
 }
 
-footer a{
+footer a {
     font-size: 1.5rem;
 }
 
@@ -82,14 +84,14 @@ footer ul li:hover {
 
 /* ----------------Turnos------------ */
 
-.section-turnos{
+.section-turnos {
     /* padding-bottom: 20px; */
-    background: linear-gradient(rgba(0, 212, 255, 1),  rgb(162, 212, 196));
+    background: linear-gradient(rgba(0, 212, 255, 1), rgb(162, 212, 196));
 }
 
 /* ---------------Mapa------------- */
 
-.card-map{
+.card-map {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,7 +108,7 @@ footer ul li:hover {
 
 /* --------------Especialidades---------------- */
 
-.cards-espe{
+.cards-espe {
     display: flex;
     justify-content: center;
     align-content: center;
