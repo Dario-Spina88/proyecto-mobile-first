@@ -1,0 +1,22 @@
+$redes: (
+    Instagram: blue,
+    Facebook: red,
+    Whatsapp: green,
+    Ubicacion: yellow,
+);
+
+.botonInstagram {
+    color: map-get($map: $redes, $key:  $Instagram);
+}
+
+.botonFacebook {
+    color: map-get($map: $redes, $key: Facebook);
+}
+
+.botonWhatsapp {
+    color: map-get($map: $redes, $key: $Whatsapp);
+}
+
+.botonUbicacion {
+    color: map-get($map: $redes, $key: $Ubicacion);
+}

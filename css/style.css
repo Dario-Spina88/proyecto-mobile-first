@@ -12,8 +12,27 @@ li {
   list-style: none;
 }
 
-.c-violeta {
-  color: rgb(138, 10, 170);
+.c-rojo {
+  color: rgb(212, 27, 42);
+}
+
+.c-negro {
+  color: black;
+}
+
+.letraChica {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.letraMediana {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.letraGrande {
+  font-size: 5rem;
+  font-weight: 900;
 }
 
 .navbar {
@@ -52,10 +71,37 @@ li {
 }
 
 .btn {
-  transition: 1s;
+  filter: opacity(85%);
 }
 .btn:hover {
   background-color: rgb(27, 112, 79);
+  font-weight: bolder;
+}
+
+.boton, .botonContacto {
+  background-color: rgb(165, 179, 171);
+  text-align: center;
+  color: rgb(9, 77, 122);
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 2px;
+}
+.boton:hover, .botonContacto:hover {
+  color: paleturquoise;
+  background-color: rgb(202, 106, 76);
+}
+.boton:active, .botonContacto:active {
+  color: rgb(202, 106, 76);
+  background-color: paleturquoise;
+}
+
+.botonContacto {
+  background-color: rgb(219, 204, 117);
+  color: rgb(101, 146, 172);
+}
+.botonContacto:active {
+  color: rgb(219, 204, 117);
+  background-color: rgb(101, 146, 172);
 }
 
 footer {

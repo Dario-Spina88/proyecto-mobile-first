@@ -1,7 +1,38 @@
 .btn {
-    transition: 1s;
+    filter: opacity(85%);
 
     &:hover {
-    background-color: rgb(27, 112, 79);
+        background-color: rgb(27, 112, 79);
+        font-weight: bolder;
+    }
 }
+
+.boton {
+    background-color: rgb(165, 179, 171);
+    text-align: center;
+    color: rgb(9, 77, 122);
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 2px;
+
+    &:hover {
+        color: paleturquoise;
+        background-color: rgb(202, 106, 76);
+    }
+
+    &:active {
+        color: rgb(202, 106, 76);
+        background-color: paleturquoise;
+    }
+}
+
+.botonContacto {
+    @extend .boton;
+    background-color: rgb(219, 204, 117);
+    color: rgb(101, 146, 172);
+
+    &:active {
+        color: rgb(219, 204, 117);
+        background-color: rgb(101, 146, 172);
+    }
 }
