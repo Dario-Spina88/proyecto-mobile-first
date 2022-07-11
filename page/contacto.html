@@ -40,7 +40,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-    <!-------------------------------------- NavBar ----------------------->
+            <!-------------------------------------- NavBar ----------------------->
 
             <nav class="collapse navbar-collapse justify-content-end fs-4" id="navbarNavDropdown">
                 <ul class="navbar-nav">
@@ -72,77 +72,103 @@
         <h1 class="letraGrande fw-bold text-center py-3">ODONTOLOGIA INTEGRAL</h1>
     </section>
 
-    <!--------------- Contacto ------------------>
+    <!--------------- Banner ------------------>
 
-    <main>
-        <div>
-            <section class="card bg">
-                <div>
-                    <img src="../img/contacto.jpg" class="card-img " alt="Contacto">
-                </div>
-                <div class="card-img-overlay d-flex flex-column justify-content-center text-center">
-                    <h2 class="card-title c-violeta display-1 fw-bold">Contacto</h2>
+    <div>
+        <section class="card bg">
+            <div>
+                <img src="../img/contacto.jpg" class="card-img " alt="Contacto">
+            </div>
+            <div class="card-img-overlay d-flex flex-column justify-content-center text-center">
+            </div>
+        </section>
+    </div>
+
+    <!-------------- Cuerpo de la Web -------------------->
+
+    <main class="container">
+
+        <h2 class="titulo-contacto letraMediana text-decoration-underline text-center">Contacto</h2>
+
+        <div class="section-contacto row my-5 rounded-4">
+            <div class="col-lg-6">
+                <section class="text-center">
+                    <div>
+                        <h3 class="fs-1 c-rojo"><i>Normas</i>
+                        </h3>
+                    </div>
+
+                    <div>
+                        <article class="text-contacto letraChica py-2 fs-4 c-turquesa fw-bold">
+                            <pre>En cumplimiento de estrictos protocolos
+
+COVID-19.
+
+Central de turnos para adultos,
+
+para pacientes por 1ra vez
+
+mensajes de Whatsapp.
+
+1234567878
+
+Pacientes en atención
+
+4123-1232
+
+Central de turnos para niños.
+
+Mensajes de Whatsapp
+
+1234567878
+
+e-mail: ejemplo@email.com</pre>
+                        </article>
+                    </div>
+                </section>
+            </div>
+
+            <!------------------------- Formulario ------------------------------>
+
+            <section class="col-lg-5 p-4 m-1">
+                <div class="row d-flex justify-content-center pt-5">
+                    <form>
+                        <div class="form-group my-2">
+                            <label for="campo-apellido">Nombre y Apellido:</label>
+                            <input class="form-control" type="text" name="campo-apellido" id="campo-apellido"
+                                placeholder="Nombre y Apellido" required>
+                        </div>
+
+                        <label for="campo-hombre">Hombre</label>
+                        <input type="radio" name="sexo" value="hombre" id="campo-hombre" required>
+
+                        <label for="campo-mujer">Mujer</label>
+                        <input type="radio" name="sexo" value="mujer" id="campo-mujer" required>
+
+                        <div class="form-group my-2">
+                            <label for="campo-mail">Email:</label>
+                            <input class="form-control" type="email" name="campo-mail" id="campo-mail"
+                                placeholder="ejemplo@email.com" required>
+                        </div>
+
+                        <div class="form-group my-2">
+                            <label for="campo-tel">Telefono:</label>
+                            <input class="form-control" type="tel" name="campo-tel" id="campo-tel"
+                                placeholder="111111111111" required>
+                        </div>
+
+                        <div class="form-group my-2">
+                            <label for="select-comentario">Comentario</label>
+                            <textarea class="form-control" name="select-comentario" id="select-comentario" cols="30"
+                                rows="10" required></textarea>
+                        </div>
+
+                        <input class="boton mx-2" type="submit" value="Enviar mensaje">
+                        <input class="boton mx-2" type="reset" value="Borrar formulario" id="">
+                    </form>
                 </div>
             </section>
         </div>
-
-
-        <section class="row-lg-6">
-            <h2 class="text-decoration-underline"><i>Contacto</i></h2>
-
-            <article>
-                <pre>
-En cumplimiento de estrictos protocolos COVID-19
-
-Central de turnos para adultos
-
-Admisión pacientes de 1a vez
-
-Mensajes de Whatsapp
-
-1234567878
-
-Pacientes en atención
-
-4123-1232
-
-e-mail: ejemplo@email.com
-
-Central de turnos para niños
-
-Mensajes de Whatsapp
-
-1234567878
-
-Pacientes en atención
-
-4123-1232
-
-e-mail: ejemplo@email.com</pre>
-            </article>
-
-    <!------------------------- Formulario ------------------------------>
-
-            <div class="row-lg-6">
-                <form>
-                    <pre>
-                <label for="campo-apellido">Nombre y Apellido</label>
-                <input type="text" name="campo-apellido" id="campo-apellido" placeholder="Nombre y Apellido">
-
-                <label for="campo-mail">Email:</label>
-                <input type="Email" name="campo-mail" id="campo-mail" placeholder="ejemplo@email.com" required>
-
-                <label for="campo-telefono">Telefono:</label>
-                <input type="tel" name="campo-telefono" id="campo-telefono" required>
-
-                <label for="select-comentario">Comentario</label>
-                <textarea name="select-comentario" id="select-comentario" cols="30" rows="10" required></textarea>
-                <input class="botonContacto mx-2" type="submit" value="Enviar mensaje">
-                <input class="botonContacto mx-2" type="reset" value="Borrar formulario" id="">
-                </pre>
-                </form>
-            </div>
-        </section>
 
         <!------------------------- BOTON SUBIR --------------------------->
 
@@ -170,25 +196,30 @@ e-mail: ejemplo@email.com</pre>
                     </h4>
                 </div>
 
-    <!----------------------------------- Redes -------------------------------->
+                <!----------------------------------- Redes -------------------------------->
 
-                <div class="row col-12 col-sm-12 col-md-12 d-flex text-center justify-content-around align-items-center">
+                <div
+                    class="row col-12 col-sm-12 col-md-12 d-flex text-center justify-content-around align-items-center">
 
                     <ul class="row">
                         <div class="col-12 col-md-3">
-                            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                            <li><a href="https://www.instagram.com/" target="_blank"
+                                    rel="noopener noreferrer">Instagram</a></li>
                             <i class="bi-instagram fs-3"></i>
                         </div>
                         <div class="col-12 col-md-3">
-                            <li><a href="https://es-la.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                            <li><a href="https://es-la.facebook.com/" target="_blank"
+                                    rel="noopener noreferrer">Facebook</a></li>
                             <i class="bi-facebook fs-3"></i>
                         </div>
                         <div class="col-12 col-md-3">
-                            <li><a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer">Whatsapp</a></li>
+                            <li><a href="https://www.whatsapp.com" target="_blank"
+                                    rel="noopener noreferrer">Whatsapp</a></li>
                             <i class="bi-whatsapp fs-3"></i>
                         </div>
                         <div class="col-12 col-md-3">
-                            <li><a href="https://mapa.buenosaires.gob.ar/" target="_blank" rel="noopener noreferrer">Ubicación</a></li>
+                            <li><a href="https://mapa.buenosaires.gob.ar/" target="_blank"
+                                    rel="noopener noreferrer">Ubicación</a></li>
                             <i class="bi bi-geo-alt fs-3"></i>
                         </div>
                     </ul>

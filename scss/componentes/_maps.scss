@@ -1,22 +1,24 @@
 $redes: (
-    Instagram: blue,
-    Facebook: red,
+    Instagram: red,
+    Facebook: blue,
     Whatsapp: green,
     Ubicacion: yellow,
 );
 
-.botonInstagram {
-    color: map-get($map: $redes, $key:  $Instagram);
+@for $i from 1 through 10 {
+    .col-#{$i} {
+        width: 10% * $i;
+    }
 }
 
-.botonFacebook {
-    color: map-get($map: $redes, $key: Facebook);
+@each $colorActual in red, yellow, green, blue{
+    .#{"" + $colorActual} {
+        color: #{$colorActual};
+    }
 }
 
-.botonWhatsapp {
-    color: map-get($map: $redes, $key: $Whatsapp);
-}
-
-.botonUbicacion {
-    color: map-get($map: $redes, $key: $Ubicacion);
+@each $red, $color in $redes {
+    .boton#{$red}{
+        color: $color;
+    }
 }

@@ -12,12 +12,20 @@ li {
   list-style: none;
 }
 
+.section-turnos {
+  background: linear-gradient(rgb(0, 212, 255), rgb(162, 212, 196));
+}
+
 .c-rojo {
   color: rgb(212, 27, 42);
 }
 
 .c-negro {
   color: black;
+}
+
+.c-turquesa {
+  color: rgb(0, 123, 172);
 }
 
 .letraChica {
@@ -67,7 +75,31 @@ li {
 
 .card img {
   height: fit-content;
+  height: 600px;
+}
+
+.card-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  clip-path: circle(30%);
+  transition-property: clip-path;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+}
+.card-mapimg {
+  height: fit-content;
   height: 500px;
+}
+.card-map:hover {
+  clip-path: circle(100%);
+}
+
+.cards-espe {
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .btn {
@@ -113,6 +145,78 @@ footer a {
 footer li:hover {
   transform: scale(1.5);
   transition: all 1s linear;
+}
+
+.col-1 {
+  width: 10%;
+}
+
+.col-2 {
+  width: 20%;
+}
+
+.col-3 {
+  width: 30%;
+}
+
+.col-4 {
+  width: 40%;
+}
+
+.col-5 {
+  width: 50%;
+}
+
+.col-6 {
+  width: 60%;
+}
+
+.col-7 {
+  width: 70%;
+}
+
+.col-8 {
+  width: 80%;
+}
+
+.col-9 {
+  width: 90%;
+}
+
+.col-10 {
+  width: 100%;
+}
+
+.red {
+  color: red;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.green {
+  color: green;
+}
+
+.blue {
+  color: blue;
+}
+
+.botonInstagram {
+  color: red;
+}
+
+.botonFacebook {
+  color: blue;
+}
+
+.botonWhatsapp {
+  color: green;
+}
+
+.botonUbicacion {
+  color: yellow;
 }
 
 /*# sourceMappingURL=style.css.map */
