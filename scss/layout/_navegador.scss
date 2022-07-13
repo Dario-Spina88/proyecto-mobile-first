@@ -1,0 +1,28 @@
+.navbar {
+    background: linear-gradient(79deg, rgba(2, 0, 36, 1) 0%, rgba(3, 146, 212, 0.8127626050420168) 57%, rgba(0, 212, 255, 1) 100%);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+    &-brand{
+        position: relative;
+    animation-name: logoEnMovimiento;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    }
+}
+
+.nav-link, .dropdown-item{
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+
+@keyframes logoEnMovimiento {
+    0% {
+        left: -150px;
+    }
+
+    100% {
+        left: 150px;
+    }
+}

@@ -1,0 +1,22 @@
+@mixin flexCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin fontsize ($size, $weight){
+    font-size: $size;
+    font-weight: $weight;
+}
+
+.letraChica{
+    @include fontsize(1rem, 300);
+}
+
+.letraMediana{
+    @include fontsize(3.5rem, 600);
+}
+
+.letraGrande{
+    @include fontsize(5rem, 900);
+}

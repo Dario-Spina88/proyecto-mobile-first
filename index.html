@@ -5,71 +5,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preconectar" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <!-- tipografia -->
-    <link
-        href="https: //fonts.googleapis.com/css2? family= Roboto:ital,wght@0,100;0,400;0,700;1,300 & family= Stardos+Stencil:wght@400;700 & display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&family=Roboto+Slab:wght@400;900&display=swap"
         rel="stylesheet">
+
     <!-- imagen iconos -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <!-- animacion -->
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- imagen de logo -->
     <link rel="shortcut icon" href="./img/diente-icono.png">
-    <!-- links css -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>Inicio - Odontologia Integral</title>
-</head>
-<!--------------------------- NAVEGADOR ---------------------------->
-<div class="contendor-grid">
 
-    <body>
-        <header>
-            <div class="encabezado-imagen">
-                <img src="./img/diente.jpg" alt="Diente brillante">
-            </div>
-            
-            <nav>
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="#seccion-nosotros">Nosotros</a></li>
-                    <li><a href="./page/turnos.html">Turnos</a></li>
-                    <li><a href="./page/profesionales.html">Profesionales</a></li>
-                    <li><a href="./page/especialidades.html">Especialidades</a></li>
-                    <li><a href="./page/contacto.html">Contacto</a></li>
+    <!-- links CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- SEO -->
+    <meta name="description" content="Odontologia general para tu problema bucal, ven a vernos y te daremos una visión de como estás.">
+    <meta name="Keywords" content="dientes, boca, odontologa, odontologo, cuidados de dientes.">
+    <title>Inicio - Odontologia Integral | Cuidamos tus dientes</title>
+</head>
+
+<!--------------------------- Header ---------------------------->
+
+<body>
+    <header class="navbar navbar-expand-lg bg-light rounded-4">
+        <div class="container">
+            <a class="navbar-brand"><img src="./img/diente.jpg" alt="Diente brillante" class="w-75"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <nav class="collapse navbar-collapse justify-content-end  fs-4" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#seccion-nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./page/turnos.html">Turnos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Mas
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="./page/especialidades.html">Especialidades</a></li>
+                            <li><a class="dropdown-item" href="./page/profesionales.html">Profesionales</a></li>
+                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./page/contacto.html">Contacto</a>
+                    </li>
                 </ul>
             </nav>
-        </header>
-        <!-------------------------- TITULO H1 ----------------------->
-        <section id="titulo">
-            <h1>ODONTOLOGIA INTEGRAL</h1>
-        </section>
-        <!------------------ Empieza el cuerpo de la web ---------------->
-        <main id="main-index">
-            <section class="banner" data-aos="zoom-in">
-                <h2>La prevención <span>el mejor remedio</span></h2>
-                <div>
-                    <article>
-                        <p class="banner-texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem minima
-                            illo
-                            sunt nisi eaque voluptate ex unde porro id, voluptates debitis similique ducimus
-                            reprehenderit ab
-                            repudiandae, accusamus sapiente aliquam? Voluptates!
-                        </p>
-                    </article>
-                </div>
-            </section>
-            <!---------------------- Nosotoros------------------------>
-            <Section id="seccion-nosotros" data-aos="fade-right">
-                <div clas="nosotros">
-                    <H2 class="nosotros__titulo">Nosotros</H2>
-                    <article>
-                        <div class="nosotros__img">
-                            <img src="./img/nosotros.jpg" alt="Boca sonriendo mostrando dientes">
-                        </div>
-                        <p class="nosotros__parrafo">
+        </div>
+    </header>
+
+    <!-------------------------- TITULO H1 ----------------------->
+    <section id="titulo">
+        <h1 class="letraGrande fw-bold text-center py-3">ODONTOLOGIA INTEGRAL</h1>
+    </section>
+
+    <!------------------------ Banner ---------------------------->
+
+    <section class="card mb-3 text-white shadow-lg" data-aos="zoom-in">
+        <img src="./img/prevenir.jpg" class="card-img-top" alt="dos personas cepillandose los dientes">
+        <article class="card-body">
+            <h2 class="card-title letraMediana text-center c-negro">La prevención <span class="c-rojo">el mejor remedio</span></h2>
+            <p class="card-text letraChica c-violeta fw-bold c-negro">Al cuidar adecuadamente sus dientes y encías, puede ayudar a prevenir problemas como la caries y
+                la enfermedad de las encías (gingivitis o periodontitis). También debe ensañar a los niños cómo cepillarse y usar el hilo dental desde una edad temprana para ayudarles a proteger sus dientes.</p>
+        </article>
+    </section>
+
+    <main id="main-index" class="container">
+
+        <!---------------------- Nosotoros------------------------>
+        <Section class="py-4" data-aos="fade-right">
+
+            <H2 id="seccion-nosotros" class="display-3 text-center pb-4 text-decoration-underline">Nosotros</H2>
+            <article class="container-nos">
+                <div class="row">
+                    <div class="col-12 col-lg-6 d-flex">
+                        <img src="./img/nosotros.jpg" class="w-100 align-items-center "
+                            alt="Boca sonriendo mostrando dientes">
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <p class=" fs-5">
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, architecto! Earum minima vel
                             quam
                             fugiat voluptas similique repudiandae repellendus itaque unde sit? <strong>A voluptatibus
@@ -86,102 +117,126 @@
                             eveniet molestias deserunt magnam esse, consequuntur corrupti accusamus incidunt adipisci
                             laboriosam iste maiores nam officiis porro cupiditate cumque. Maxime, labore laboriosam?
                         </p>
+                    </div>
+                </div>
+            </article>
 
-                    </article>
+        </Section data-aos=>
 
+        <!--------------------------- Seccion 2 -------------------------->
+
+        <h2 class="text-center display-3 text-decoration-underline py-5">Cuidados de los dientes</h2>
+
+        <section class="section-cards">
+
+            <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center">
+
+                <article class="card-index shadow-lg rounded-4 p-2 h-100" style="width: 20rem;" data-aos="fade-right">
+                    <img src="./img/hilo-dental.jpg" class="card-img-top rounded-4"
+                        alt="pasar hilo dental por cada diente">
+                    <div class="card-body">
+                        <h3 class="card-title text-center p-3">Hilo Dental</h3>
+                        <p class="card-text p-2">Primero el hilo dental y después el cepillo.<br>No es necesario que lo
+                            utilice más de una vez al día debido al hecho de que la placa tarda 24 horas en acumularse
+                            en nuestra cavidad bucal. Utilizando el hilo de esta manera, también disminuye el riesgo de
+                            dañar las encías durante el uso excesivo o inadecuado del hilo dental.</p>
+                    </div>
+                </article>
+
+                <article class="card-index shadow-lg rounded-4 m-3 p-2 h-100" data-aos="fade-up" style="width: 20rem;">
+                    <img src="./img/niño.jpg" class="card-img-top rounded-4" alt="cepillar los dientes">
+                    <div class="card-body">
+                        <h3 class="card-title text-center p-3">Cepillar</h3>
+                        <p class="card-text p-2">Cepillarse los dientes es una parte importante de la higiene bucal
+                            habitual. Para tener una boca y sonrisa sanas. Cepíllese los dientes dos veces al día con un
+                            cepillo de cerdas suaves. El tamaño y la forma del cepillo deben adaptarse a su boca y
+                            permitirle llegar a todas las zonas con facilidad. Sustituya el cepillo cada tres o cuatro
+                            meses, o antes si se las cerdas se desgastan.</p>
+                    </div>
+                </article>
+
+                <article class="card-index shadow-lg rounded-4 p-2 h-100" style="width: 20rem;" data-aos="fade-left">
+                    <img src="./img/liquido.jpg" class="card-img-top rounded-4" alt="Enjuague bucal">
+                    <div class="card-body">
+                        <h3 class="card-title text-center p-3">Enjuague bucal</h3>
+                        <p class="card-text p-2">Los enjuagues bucales se utilizan por distintos motivos:<br>Refrescar
+                            el aliento. Ayudar a impedir o controlar la caries dental. Reducir la placa (una capa fina
+                            de bacterias que se forma en los dientes) Prevenir o reducir la gingivitis (una fase
+                            temprana de la enfermedad de las encías).</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!------------------------- BOTON SUBIR --------------------------->
+
+        <div class="subir d-grid gap-2 col-6 mx-auto p-5">
+            <a href="#titulo" class="btn btn-outline-success me-md-2">Subir</a>
+        </div>
+    </main>
+
+    <!--------------------------------- FOOTER --------------------->
+
+    <footer class="conteiner-fluid">
+
+        <div class="conteiner border-bottom p-3">
+
+            <div class="row col-12 px-4 text-center d-flex align-items-center">
+
+                <div class="container  col-4 col-sm-4 col-ms-4">
+                    <a class="img-nav"><img src="../img/diente.jpg" alt="Diente brillante" class="w-15"></a>
                 </div>
 
-            </Section>
 
-
-            <!--------------------------- ASIDE -------------------------->
-
-            <aside class="contenedor" data-aos="fade-left">
-
-                <div class="contenedor-lineamedia">
-
-                    <h2>Cuidados de los dientes</h2>
-
-                    <img src="./img/cepillar.jpg" alt="cepillar los dientes" width="200">
-
-                    <article class="contenedor__text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ipsum quod vero temporibus ad
-                        inventore voluptatibus voluptate nulla tempore sed optio placeat quia ducimus, rerum, eius
-                        veritatis. Provident, laborum eveniet.<br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ullam nostrum harum, veniam, ab
-                        laboriosam repellendus sed fugiat ad et, natus dignissimos illum est in quibusdam possimus
-                        adipisci
-                        assumenda quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quasi aut,
-                        ducimus
-                        autem a alias earum tempora saepe quas itaque. Totam vitae quo nesciunt omnis saepe delectus
-                        dignissimos, autem commodi!
-
-                    </article>
-
-                    <img src="./img/hilodental.jpg" alt="pasar hilo dental por cada diente" width="200">
-
-                    <article class="contenedor__text">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore pariatur voluptatibus
-                        labore earum
-                        ex
-                        delectus illum deserunt voluptatem fugit facere eius numquam, beatae velit mollitia, eaque
-                        magni
-                        inventore. Vitae, laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Recusandae
-                        distinctio, enim nihil minima tempore inventore eos similique quam dolorum dolore veritatis
-                        sapiente
-                        quas accusantium, quidem iusto quisquam exercitationem perspiciatis. <br>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque amet quae alias nulla quis
-                        nesciunt
-                        aliquid quidem illum corporis excepturi minus quod voluptas aliquam doloribus inventore,
-                        iusto illo
-                        atque harum.
-                    </article>
+                <div class="col-12 col-sm-8 col-md-8">
+                    <h4 class=" my-3 text-center">
+                        <b>Seguinos en nuestras redes</b>
+                    </h4>
                 </div>
-            </aside>
 
-            <!------------------------- BOTON SUBIR --------------------------->
+                <!------------------------ Redes -------------------->
 
-            <a href="#titulo" class="subir">Subir</a>
-</div>
+                <div
+                    class="row col-12 col-sm-12 col-md-12 d-flex text-center justify-content-around align-items-center">
 
-</main>
-
-<!--------------------------------- FOOTER --------------------->
-
-<footer>
-
-    <ul>
-        <span><b>Seguinos en nuestras redes</b></span>
-        <div>
-            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-            <i class="bi-instagram"></i>
+                    <ul class="row">
+                        <div class="col-12 col-md-3">
+                            <li><a href="https://www.instagram.com/" target="_blank"
+                                    rel="noopener noreferrer">Instagram</a></li>
+                            <i class="bi-instagram fs-3 botonInstagram"></i>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <li><a href="https://es-la.facebook.com/" target="_blank"
+                                    rel="noopener noreferrer">Facebook</a></li>
+                            <i class="bi-facebook fs-3 botonFacebook"></i>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <li><a href="https://www.whatsapp.com" target="_blank"
+                                    rel="noopener noreferrer">Whatsapp</a></li>
+                            <i class="bi-whatsapp fs-3 botonWhatsapp"></i>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <li><a href="https://mapa.buenosaires.gob.ar/" target="_blank"
+                                    rel="noopener noreferrer">Ubicación</a></li>
+                            <i class="bi bi-geo-alt fs-3 botonUbicacion"></i>
+                        </div>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div>
-            <li><a href="https://es-la.facebook.com/" target="_blank">Facebook</a></li>
-            <i class="bi-facebook"></i>
-        </div>
-        <div>
-            <li><a href="https://www.whatsapp.com" target="_blank">Contacto</a></li>
-            <i class="bi-whatsapp"></i>
-        </div>
-        <div>
-            <li><a href="https://mapa.buenosaires.gob.ar/" target="_blank">Como llegar</a></li>
-            <i class="bi bi-geo-alt"></i>
-        </div>
-    </ul>
 
-    <h4>Copyright - Todos los derechos reservados</h4>
+        <div class="text-center">
+            <p class="col-12 text-center fs-4">Copyright - Todos los derechos reservados</p>
+        </div>
+    </footer>
 
+    <!--------------------- Links JS ----------------------->
 
-</footer>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
-<script src="./js/bootstrap.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
-</div>
 
 </html>

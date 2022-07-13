@@ -7,128 +7,245 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconectar" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- tipografia -->
     <link
         href="https: //fonts.googleapis.com/css2? family= Roboto:ital,wght@0,100;0,400;0,700;1,300 & family= Stardos+Stencil:wght@400;700 & display=swap"
         rel="stylesheet">
+
+    <!-- imagen iconos -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <!-- animacion -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- imagen de logo -->
     <link rel="shortcut icon" href="../img/diente-icono.png">
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>Especialidades</title>
+
+    <!-- links CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- SEO -->
+    <meta name="description" content="Tenemos una gran variedad de especialidades en nuestro consultorio odontologico, para atenderte en capital federal.">
+    <meta name="keywords" content="ortodoncia, pediatria, limpieza dental, endodoncia, radiografia, implantes.">
+    <title>Especialidades | Consulta la que necesites</title>
 </head>
 
+<!--------------------- Header ---------------->
+
 <body>
-    <header>
-        <div class="encabezado-imagen">
-            <img src="../img/diente.jpg" alt="Diente brillante">
+    <header class="navbar navbar-expand-lg bg-light rounded-4">
+        <div class="container">
+            <a class="navbar-brand"><img src="../img/diente.jpg" alt="Diente brillante" class="w-75"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <nav class="collapse navbar-collapse justify-content-end fs-4" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./turnos.html">Turnos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Mas
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="./especialidades.html">Especialidades</a></li>
+                            <li><a class="dropdown-item" href="./profesionales.html">Profesionales</a></li>
+                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./turnos.html">Turnos</a></li>
-                <li><a href="./profesionales.html">Profesionales</a></li>
-                <li><a href="./especialidades.html">Especialidades</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
     </header>
+
     <!-------------------------- TITULO H1 ----------------------->
+
     <section id="titulo">
-        <h1>ODONTOLOGIA INTEGRAL</h1>
+        <h1 class="letraGrande fw-bold text-center py-3">ODONTOLOGIA INTEGRAL</h1>
     </section>
-    <!-- Tabla de equipo profecional -->
+
+    <!--------------------- Tabla de equipo profecional -------------->
     <main>
 
-        <div class="bannerEspecialidades"></div>
+        <div>
+            <section class="card bg">
+                <div>
+                    <img src="../img/elementos.jpg" class="card-img " alt="especialidades">
+                </div>
+                <div class="card-img-overlay d-flex flex-column justify-content-center text-center">
+                </div>
+            </section>
+        </div>
 
-        <h2><i>Especialidades</i></h2>
-        <hr>
+        <!---------------------- Tarjetas especialidades ------------------>
 
-        <section id="titulo">
+        <h2 class="display-3 text-center text-decoration-underline py-5"><i>Especialidades</i></h2>
 
-            <img src="../imagenes/especialidad-endodoncia.jpg" alt="endodoncia" width="400">
+        <section class="cards-espe container">
+            <div class="row ">
 
-            <h3>Endodoncia</h3>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores ducimus eaque odio veniam. <br> Blanditiis minus eos quaerat reprehenderit error ipsam atque hic obcaecati, quidem maiores debitis corrupti voluptatibus veritatis fuga?
-            </p>
-            <hr>
+                <div class="col-12 col-md-6 p-3 d-flex justify-content-center" data-aos="flip-up">
+                    <article class="card-esp text-center rounded-4 shadow-lg border border-dark p-3 h-100 bg-danger"
+                        style="width: 22rem;">
+                        <img src="../img/especialidad-implantes.jpg"
+                            class="card-img-top border-bottom border-dark rounded-4" alt="implante">
+                        <div class="card-body">
+                            <h3 class="card-title p-3">Implante</h3>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card's content.</p>
+                        </div>
+                    </article>
+                </div>
 
-            <img src="../imagenes/especialidad-implantes.jpg" alt="implante" width="400">
+                <div class="col-12 col-md-6 p-3 d-flex justify-content-center" data-aos="flip-up">
+                    <article class="card-esp text-center rounded-4 shadow-lg border border-dark p-3 h-100 bg-primary"
+                        style="width: 22rem;">
+                        <img src="../img/especialidad-limpieza.jpg" class="card-img-top rounded-4" alt="limpieza">
+                        <div class="card-body">
+                            <h3 class="card-title p-3">Limpieza</h3>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card's content.</p>
+                        </div>
+                    </article>
+                </div>
 
-            <h3>Implante</h3>
+                <div class="col-12 col-md-6 p-3 d-flex justify-content-center" data-aos="flip-up">
+                    <article class="card-esp text-center rounded-4 shadow-lg border border-dark p-3 h-100 bg-success"
+                        style="width: 22rem;">
+                        <img src="../img/especialidad-ortodoncia.jpg" class="card-img-top rounded-4" alt="ortodoncia">
+                        <div class="card-body">
+                            <h3 class="card-title p-3">Ortodoncia</h3>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card's content.</p>
+                        </div>
+                    </article>
+                </div>
 
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores ducimus eaque odio veniam. <br> Blanditiis minus eos quaerat reprehenderit error ipsam atque hic obcaecati, quidem maiores debitis corrupti voluptatibus veritatis fuga?
-            </p>
-            <hr>
+                <div class="col-12 col-md-6 p-3 d-flex justify-content-center" data-aos="flip-up">
+                    <article class="card-esp text-center rounded-4 shadow-lg border border-dark p-3 h-100 bg-info"
+                        style="width: 22rem;">
+                        <img src="../img/especialidad-pedriatrica.jpg" class="card-img-top rounded-4" alt="pediatria">
+                        <div class="card-body">
+                            <h3 class="card-title p-3">Pediatria</h3>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card's content.</p>
+                        </div>
+                    </article>
+                </div>
 
-            <img src="../imagenes/especialidad-limpieza.jpg" alt="limpieza de dientes" width="400">
+                <div class="col-12 col-md-6 p-3 d-flex justify-content-center" data-aos="flip-up">
+                    <article class="card-esp text-center rounded-4 shadow-lg border border-dark p-3 h-100 bg-secondary"
+                        style="width: 22rem;">
+                        <img src="../img/especialidad-endodoncia.jpg" class="card-img-top border border-dark rounded-4"
+                            alt="endodoncia">
+                        <div class="card-body">
+                            <h3 class="card-title p-3">Endodoncia</h3>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card's content.</p>
+                        </div>
+                    </article>
+                </div>
 
-            <h3>Limpieza</h3>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores ducimus eaque odio veniam. <br> Blanditiis minus eos quaerat reprehenderit error ipsam atque hic obcaecati, quidem maiores debitis corrupti voluptatibus veritatis fuga?
-            </p>
-            <hr>
-
-            <img src="../imagenes/especialidad-ortodoncia.jpg" alt="ortodoncia" width="400">
-
-            <h3>Ortodoncia</h3>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores ducimus eaque odio veniam. <br> Blanditiis minus eos quaerat reprehenderit error ipsam atque hic obcaecati, quidem maiores debitis corrupti voluptatibus veritatis fuga?
-            </p>
-            <hr>
-
-            <img src="../imagenes/especialidad-pedriatrica.jpg" alt="pediatria" width="400">
-
-            <h3>Pediatria</h3>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores ducimus eaque odio veniam. <br> Blanditiis minus eos quaerat reprehenderit error ipsam atque hic obcaecati, quidem maiores debitis corrupti voluptatibus veritatis fuga?
-            </p>
-            <hr>
-
-            <img src="../imagenes/especialidad-radiografia.jpg" alt="radiografia" width="400">
-
-            <h3>Radriografia</h3>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores ducimus eaque odio veniam. <br> Blanditiis minus eos quaerat reprehenderit error ipsam atque hic obcaecati, quidem maiores debitis corrupti voluptatibus veritatis fuga?
-            </p>
-            <hr>
-
+                <div class="col-12 col-md-6 p-3 d-flex justify-content-center" data-aos="flip-up">
+                    <article class="card-esp text-center rounded-4 shadow-lg border border-dark p-3 h-100 bg-warning"
+                        style="width: 22rem;">
+                        <img src="../img/especialidad-radiografia.jpg" class="card-img-top rounded-4" alt="radiografia">
+                        <div class="card-body">
+                            <h3 class="card-title p-3">Radriografia</h3>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card's content.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
 
-        <div class="subir">
-            <a href="#titulo">Subir</a>
+        <!------------------------- BOTON SUBIR --------------------------->
+
+        <div class="subir d-grid gap-2 col-6 mx-auto p-4">
+            <a href="#titulo" class="btn btn-outline-success me-md-2">Subir</a>
         </div>
 
     </main>
 
-    <footer>
+    <!--------------------------------- FOOTER --------------------->
 
-        <ul>
-            <span><b>Seguinos en nuestras redes</b></span>
-            <div>
-                <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-                <i class="bi-instagram"></i>
-            </div>
-            <div>
-                <li><a href="https://es-la.facebook.com/" target="_blank">Facebook</a></li>
-                <i class="bi-facebook"></i>
-            </div>
-            <div>
-                <li><a href="https://www.whatsapp.com" target="_blank">Contacto</a></li>
-                <i class="bi-whatsapp"></i>
-            </div>
-            <div>
-                <li><a href="https://mapa.buenosaires.gob.ar/" target="_blank">Como llegar</a></li>
-                <i class="bi bi-geo-alt"></i>
-            </div>
-        </ul>
+    <footer class="conteiner-fluid">
 
-        <h4>Copyright - Todos los derechos reservados</h4>
+        <div class="conteiner border-bottom p-3">
+
+            <div class="row col-12 px-4 text-center d-flex align-items-center">
+
+                <div class="container  col-4 col-sm-4 col-ms-4">
+                    <a class="img-nav"><img src="../img/diente.jpg" alt="Diente brillante" class="w-15"></a>
+                </div>
 
 
+                <div class="col-12 col-sm-8 col-md-8">
+                    <h4 class=" my-3 text-center">
+                        <b>Seguinos en nuestras redes</b>
+                    </h4>
+                </div>
+
+                <!------------------------ Redes -------------------->
+
+                <div class="row col-12 col-sm-12 col-md-12 d-flex text-center justify-content-around align-items-center">
+
+                    <ul class="row">
+                        <div class="col-12 col-md-3">
+                            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                            <i class="bi-instagram fs-3"></i>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <li><a href="https://es-la.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                            <i class="bi-facebook fs-3"></i>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <li><a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer">Whatsapp</a></li>
+                            <i class="bi-whatsapp fs-3"></i>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <li><a href="https://mapa.buenosaires.gob.ar/" target="_blank" rel="noopener noreferrer">Ubicación</a></li>
+                            <i class="bi bi-geo-alt fs-3"></i>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <p class="col-12 text-center fs-4">Copyright - Todos los derechos reservados</p>
+        </div>
     </footer>
 
+
+    <!-- Links JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

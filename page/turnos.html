@@ -7,139 +7,262 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconectar" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- tipografia -->
     <link
         href="https: //fonts.googleapis.com/css2? family= Roboto:ital,wght@0,100;0,400;0,700;1,300 & family= Stardos+Stencil:wght@400;700 & display=swap"
         rel="stylesheet">
+
+    <!-- imagen iconos -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <!-- animacion -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- imagen de logo -->
     <link rel="shortcut icon" href="../img/diente-icono.png">
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>Turnos</title>
+
+    <!-- links CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- SEO -->
+    <meta name="description" content="Reserva tu turno rapido, facil y online, atendemos en capital federal, con disposicón en nuestra agenda.">
+    <meta name="keywords" content="turnos para, adultos, chicos.">
+    <title>Turnos | Reserva tu turno en capital federal</title>
 </head>
 
+<!--------------------- Header ---------------->
+
 <body>
-    <header>
-        <div class="encabezado-imagen">
-            <img src="../img/diente.jpg" alt="Diente brillante">
+    <header class="navbar navbar-expand-lg bg-light rounded-4">
+        <div class="container">
+            <a class="navbar-brand"><img src="../img/diente.jpg" alt="Diente brillante" class="w-75"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!----------------------------- NavBar --------------------->
+
+            <nav class="collapse navbar-collapse justify-content-end fs-4" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./turnos.html">Turnos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Mas
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="./especialidades.html">Especialidades</a></li>
+                            <li><a class="dropdown-item" href="./profesionales.html">Profesionales</a></li>
+                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./turnos.html">Turnos</a></li>
-                <li><a href="./profesionales.html">Profesionales</a></li>
-                <li><a href="./especialidades.html">Especialidades</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
     </header>
+
     <!-------------------------- TITULO H1 ----------------------->
+
     <section id="titulo">
-        <h1>ODONTOLOGIA INTEGRAL</h1>
+        <h1 class="letraGrande fw-bold text-center py-3">ODONTOLOGIA INTEGRAL</h1>
     </section>
 
-        <div class="bannerTurnos">
+    <!-------------- Banner ------------->
+
+    <div>
+        <section class="card bg">
+            <div>
+                <img src="../img/turno.jpg" class="card-img " alt="Turnos">
+            </div>
+            <div class="card-img-overlay d-flex flex-column justify-content-center text-center">
+            </div>
+        </section>
+    </div>
+
+    <!--------------------- Cuerpo de la web -------------------->
+
+    <main class="container">
+
+        <div class="section-turnos row my-5 rounded-4">
+            <div class="col-lg-6">
+                <section class="text-center">
+                    <div>
+                        <h2 class="titulo-turno letraMediana text-decoration-underline"><i>Turno Online, Facil y Rapido</i>
+                        </h2>
+                    </div>
+
+                    <div>
+                        <article class="text-turno fs-2 py-2">
+                            <pre>
+                            
+CABA Calle Gurruchaga  
+
+Barrio Palermo 
+
+CP12354 - CABA - Buenos Aires
+
+Argentina 
+
+HORARIO DE ATENCIÓN 
+                    
+Lunes a Viernes 9hs a 18hs 
+
+CONTACTO 1512345678</pre>
+                        </article>
+                    </div>
+                </section>
+            </div>
+
+            <!----------------------- Formulario ----------------------->
+
+            <section class="col-lg-6 p-4">
+                <div class="d-flex justify-content-center">
+                    <form>
+                        <div class="form-group my-2">
+                            <label for="campo-apellido">Nombre y Apellido:</label>
+                            <input class="form-control" type="text" name="campo-apellido" id="campo-apellido"
+                                placeholder="Nombre y Apellido" required>
+                        </div>
+
+                        <label for="campo-hombre">Hombre</label>
+                        <input type="radio" name="sexo" value="hombre" id="campo-hombre" required>
+
+                        <label for="campo-mujer">Mujer</label>
+                        <input type="radio" name="sexo" value="mujer" id="campo-mujer" required>
+
+                        <div class="form-group my-2">
+                            <label for="campo-mail">Email:</label>
+                            <input class="form-control" type="email" name="campo-mail" id="campo-mail"
+                                placeholder="ejemplo@email.com" required>
+                        </div>
+
+                        <div class="form-group my-2">
+                            <label for="campo-tel">Telefono:</label>
+                            <input class="form-control" type="tel" name="campo-tel" id="campo-tel"
+                                placeholder="111111111111" required>
+                        </div>
+
+                        <div class="form-group my-2">
+                            <label for="campo-fecha">Fecha:</label>
+                            <input class="form-control" type="date" name="campo-fecha" id="campo-fecha" required>
+                        </div>
+
+                        <div class="form-group my-2">
+                            <label for="select-prepaga">Introduzca su Prepaga</label>
+                            <select class="form-control" name="" id="select-prepaga">
+                                <option value="">OSDE</option>
+                                <option value="">Swiss Medical</option>
+                                <option value="">Medicus</option>
+                                <option value="">Galeno</option>
+                                <option value="">Avalian</option>
+                                <option value="">Sancor Salud</option>
+                                <option value="">OMINT</option>
+                                <option value="">Medifé</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group my-2">
+                            <label for="select-comentario">Comentario</label>
+                            <textarea class="form-control" name="select-comentario" id="select-comentario" cols="30"
+                                rows="10" required></textarea>
+                        </div>
+
+                        <input class="boton mx-2" type="submit" value="Enviar mensaje">
+                        <input class="boton mx-2" type="reset" value="Borrar formulario" id="">
+
+                        <label for="select-recibir">¿Desea recibir el Newsletter?</label>
+                        <input type="checkbox" name="acepta" value="1" id="select-recibir">
+                    </form>
+                </div>
+            </section>
         </div>
 
-        <section id="titulo">
-            <h2 class="web"><i>Turno Online, Facil y Rapido</i></h2>
+        <!-------------------------MAPA------------------------->
+        <section class="container">
+            <div class="text-center m-5">
+                <h3 class="display-3 p-3 mb-2 bg-success shadow-lg rounded-4">Mapa</h3>
 
-            <article class="center">
-                <pre>
-                    CABA Calle 9 de julio - Barrio Palermo 
-                    
-                    CP12354 - CABA - Buenos Aires - Argentina 
-
-                    HORARIO DE ATENCIÓN 
-                    
-                    Lunes a Viernes 9hs a 18hs 
-                    
-                    CONTACTO 1512345678
-                </pre>
-            </article>
-
-            <h3>Mapa</h3>
-
-            <div  class="bannerMapa"></div>
-
-            <!-----------Formulario--------->
-
-            <form>
-                <pre>
-                <label for="campo-apellido">Nombre y Apellido:</label>
-                <input type="text" name="campo-apellido" id="campo-apellido" placeholder="Nombre y Apellido" required>
-
-                <label for="campo-hombre">Hombre</label>
-                <input type="radio" name="sexo" value="hombre" id="campo-hombre" required>
-
-                <label for="campo-mujer">Mujer</label>
-                <input type="radio" name="sexo" value="mujer" id="campo-mujer" required>
-
-                <label for="campo-mail">Email:</label>
-                <input type="email" name="campo-mail" id="campo-mail" placeholder="ejemplo@email.com" required>
-
-                <label for="campo-tel">Telefono:</label>
-                <input type="tel" name="campo-tel" id="campo-tel" placeholder="111111111111" required>
-
-                <label for="campo-fecha">Fecha:</label>
-                <input type="date" name="campo-fecha" id="campo-fecha" required>
-
-                <label for="select-prepaga">Introduzca su Prepaga</label>
-
-                <select name="" id="select-prepaga">
-                    <option value="">OSDE</option>
-                    <option value="">Swiss Medical</option>
-                    <option value="">Medicus</option>
-                    <option value="">Galeno</option>
-                    <option value="">Avalian</option>
-                    <option value="">Sancor Salud</option>
-                    <option value="">OMINT</option>
-                    <option value="">Medifé</option>
-                </select>
-
-                <label for="select-comentario">Comentario</label>
-                <textarea name="select-comentario" id="select-comentario" cols="30" rows="10" required></textarea>
-
-                <label for="select-recibir">¿Desea recibir el Newsletter?</label>
-                <input type="checkbox" name="acepta" value="1" id="select-recibir">
-                <input type="submit" value="Enviar mensaje">
-                <input type="reset" value="Borrar formulario" id="">
-                </pre>
-            </form>
+                <figure class="card-map text-white overflow-hidden m-5 rounded-4">
+                    <div class="d-flex align-items-center">
+                        <img src="../img/mapa.jpg" alt="mapa de ubicacion">
+                    </div>
+                </figure>
+            </div>
         </section>
 
-        <div class="subir">
-            <a href="#titulo">Subir</a>
+        <!------------------------- BOTON SUBIR --------------------------->
+
+        <div class="subir d-grid gap-2 col-6 mx-auto pb-5">
+            <a href="#titulo" class="btn btn-outline-success me-md-2">Subir</a>
         </div>
-
-
     </main>
 
-    <footer>
+    <!--------------------------------- FOOTER --------------------->
 
-        <ul>
-            <span><b>Seguinos en nuestras redes</b></span>
-            <div>
-                <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-                <i class="bi-instagram"></i>
-            </div>
-            <div>
-                <li><a href="https://es-la.facebook.com/" target="_blank">Facebook</a></li>
-                <i class="bi-facebook"></i>
-            </div>
-            <div>
-                <li><a href="https://www.whatsapp.com" target="_blank">Contacto</a></li>
-                <i class="bi-whatsapp"></i>
-            </div>
-            <div>
-                <li><a href="https://mapa.buenosaires.gob.ar/" target="_blank">Como llegar</a></li>
-                <i class="bi bi-geo-alt"></i>
-            </div>
-        </ul>
+    <footer class="conteiner-fluid">
 
-        <h4>Copyright - Todos los derechos reservados</h4>
+        <div class="conteiner border-bottom p-3">
+
+            <div class="row col-12 px-4 text-center d-flex align-items-center">
+
+                <div class="container  col-4 col-sm-4 col-ms-4">
+                    <a class="img-nav"><img src="../img/diente.jpg" alt="Diente brillante" class="w-15"></a>
+                </div>
 
 
+                <div class="col-12 col-sm-8 col-md-8">
+                    <h4 class=" my-3 text-center">
+                        <b>Seguinos en nuestras redes</b>
+                    </h4>
+                </div>
+
+                <!------------------------ Redes -------------------->
+
+                <div
+                    class="row col-12 col-sm-12 col-md-12 d-flex text-center justify-content-around align-items-center">
+
+                    <ul class="row">
+                        <div class="col-12 col-md-3">
+                            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                            <i class="bi-instagram fs-3"></i>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <li><a href="https://es-la.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                            <i class="bi-facebook fs-3"></i>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <li><a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer">Whatsapp</a></li>
+                            <i class="bi-whatsapp fs-3"></i>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <li><a href="https://mapa.buenosaires.gob.ar/" target="_blank" rel="noopener noreferrer">Ubicación</a></li>
+                            <i class="bi bi-geo-alt fs-3"></i>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <p class="col-12 text-center fs-4">Copyright - Todos los derechos reservados</p>
+        </div>
     </footer>
 
+    <!--------------------- Links JS ----------------------->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

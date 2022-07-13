@@ -1,0 +1,11 @@
+footer{
+    background-color: rgb(85, 156, 132);
+    & a{
+        font-size: 1.5rem;
+        
+    }
+    & li:hover{
+        transform: scale(1.5);
+    transition: all 1s linear;
+    }
+}

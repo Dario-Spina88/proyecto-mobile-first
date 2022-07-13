@@ -7,43 +7,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconectar" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- tipografia -->
     <link
         href="https: //fonts.googleapis.com/css2? family= Roboto:ital,wght@0,100;0,400;0,700;1,300 & family= Stardos+Stencil:wght@400;700 & display=swap"
         rel="stylesheet">
+
+    <!-- imagen iconos -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <!-- animacion -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- imagen de logo -->
     <link rel="shortcut icon" href="../img/diente-icono.png">
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>Profesionales</title>
+
+    <!-- links CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- SEO -->
+    <meta name="description" content="Nuestros doctores con postgrados, muestran una gran capacidad en cada una de sus especialidades.">
+    <meta name="keywords" content="odontologos, odontologas, doctora, doctores, profesionales.">
+    <title>Profesionales | Gran atención y disposición</title>
 </head>
 
+<!--------------------- Header ---------------->
+
 <body>
-    <header>
-        <div class="encabezado-imagen">
-            <img src="../img/diente.jpg" alt="Diente brillante">
+    <header class="navbar navbar-expand-lg bg-light rounded-4">
+        <div class="container">
+            <a class="navbar-brand"><img src="../img/diente.jpg" alt="Diente brillante" class="w-75"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <nav class="collapse navbar-collapse justify-content-end fs-4" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./turnos.html">Turnos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Mas
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="./especialidades.html">Especialidades</a></li>
+                            <li><a class="dropdown-item" href="./profesionales.html">Profesionales</a></li>
+                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./turnos.html">Turnos</a></li>
-                <li><a href="./profesionales.html">Profesionales</a></li>
-                <li><a href="./especialidades.html">Especialidades</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
     </header>
     <!-------------------------- TITULO H1 ----------------------->
     <section id="titulo">
-        <h1>ODONTOLOGIA INTEGRAL</h1>
+        <h1 class="letraGrande fw-bold text-center py-3">ODONTOLOGIA INTEGRAL</h1>
     </section>
+
+    <!--------------Cuerpo de la web------------>
 
     <main>
 
-        <div class="bannerProfesionales">
+        <div>
+            <section class="card bg">
+                <div>
+                    <img src="../img/profecionales.jpg" class="card-img " alt="profesionales">
+                </div>
+                <div class="card-img-overlay d-flex flex-column justify-content-center">
+                </div>
+            </section>
         </div>
 
-        <section id="titulo">
+        <section>
 
-            <h2><i>Profesionales</i></h2>
+            <h2 class="text-decoration-underline text-center letraMediana"><i>Profesionales</i></h2>
 
             <article>
 
@@ -56,10 +101,10 @@
                         suscipit nam quod eligendi eos repudiandae alias, quam natus dolores quo odit sed minus nemo
                         molestias consectetur.
                     </p>
-                    </div>
-                    <hr>
+                </div>
+                <hr>
 
-                    <div>
+                <div>
                     <img src="../img/doctora.jpg" alt="doctora Garcia Laura" width=" 400" height="300">
 
                     <h3>Garcia Laura</h3>
@@ -68,10 +113,10 @@
                         animi consequuntur eum nisi placeat rem quam, doloribus voluptate earum corrupti hic nostrum
                         quis? Dolores placeat velit cupiditate?
                     </p>
-                    </div>
-                    <hr>
+                </div>
+                <hr>
 
-                    <div>
+                <div>
                     <img src="../img/doctor2.jpg" alt="doctor Palacios Esteban" width=" 400" height="300">
 
                     <h3>Palacios Esteban</h3>
@@ -80,10 +125,10 @@
                         provident voluptatem obcaecati voluptatibus reprehenderit consequuntur quas recusandae delectus
                         tenetur omnis praesentium dolorum voluptate modi, nam nihil!
                     </p>
-                    </div>
-                    <hr>
+                </div>
+                <hr>
 
-                    <div>
+                <div>
                     <img src="../img/doctora2.jpg" alt="doctora Fernandez Patricia" width=" 400" height="300">
 
                     <h3>Fernandez Patricia</h3>
@@ -142,39 +187,71 @@
             </table>
         </section>
 
-        <div class="subir">
-            <a href="#titulo">Subir</a>
+        <!------------------------- BOTON SUBIR --------------------------->
+
+        <div class="subir d-grid gap-2 col-6 mx-auto pb-5">
+            <a href="#titulo" class="btn btn-outline-success me-md-2">Subir</a>
         </div>
 
     </main>
 
-    <footer>
+    <!--------------------------------- FOOTER --------------------->
 
-        <ul>
-            <span><b>Seguinos en nuestras redes</b></span>
-            <div>
-                <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-                <i class="bi-instagram"></i>
-            </div>
-            <div>
-                <li><a href="https://es-la.facebook.com/" target="_blank">Facebook</a></li>
-                <i class="bi-facebook"></i>
-            </div>
-            <div>
-                <li><a href="https://www.whatsapp.com" target="_blank">Contacto</a></li>
-                <i class="bi-whatsapp"></i>
-            </div>
-            <div>
-                <li><a href="https://mapa.buenosaires.gob.ar/" target="_blank">Como llegar</a></li>
-                <i class="bi bi-geo-alt"></i>
-            </div>
-        </ul>
+    <footer class="conteiner-fluid">
 
-        <h4>Copyright - Todos los derechos reservados</h4>
+        <div class="conteiner border-bottom p-3">
+
+            <div class="row col-12 px-4 text-center d-flex align-items-center">
+
+                <div class="container  col-4 col-sm-4 col-ms-4">
+                    <a class="img-nav"><img src="../img/diente.jpg" alt="Diente brillante" class="w-15"></a>
+                </div>
 
 
+                <div class="col-12 col-sm-8 col-md-8">
+                    <h4 class=" my-3 text-center">
+                        <b>Seguinos en nuestras redes</b>
+                    </h4>
+                </div>
+
+                <!------------------------ Redes -------------------->
+
+                <div
+                    class="row col-12 col-sm-12 col-md-12 d-flex text-center justify-content-around align-items-center">
+
+                    <ul class="row">
+                        <div class="col-12 col-md-3">
+                            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                            <i class="bi-instagram fs-3"></i>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <li><a href="https://es-la.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                            <i class="bi-facebook fs-3"></i>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <li><a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer">Whatsapp</a></li>
+                            <i class="bi-whatsapp fs-3"></i>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <li><a href="https://mapa.buenosaires.gob.ar/" target="_blank" rel="noopener noreferrer">Ubicación</a></li>
+                            <i class="bi bi-geo-alt fs-3"></i>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <p class="col-12 text-center fs-4">Copyright - Todos los derechos reservados</p>
+        </div>
     </footer>
 
+    <!-- Links JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+ul {
+  list-style: none;
+}
 
+li {
+  list-style: none;
+}
+
+.section-turnos {
+  background: linear-gradient(rgb(0, 212, 255), rgb(162, 212, 196));
+}
+
+.c-rojo {
+  color: rgb(212, 27, 42);
+}
+
+.c-negro {
+  color: black;
+}
+
+.c-turquesa {
+  color: rgb(0, 123, 172);
+}
+
+.letraChica {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.letraMediana {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.letraGrande {
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+.navbar {
+  background: linear-gradient(79deg, rgb(2, 0, 36) 0%, rgba(3, 146, 212, 0.812762605) 57%, rgb(0, 212, 255) 100%);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.navbar-brand {
+  position: relative;
+  animation-name: logoEnMovimiento;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.nav-link, .dropdown-item {
+  color: aliceblue;
+  font-size: 1.5rem;
+}
+
+@keyframes logoEnMovimiento {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 150px;
+  }
+}
+.dropdown-item {
+  color: black;
+}
+
+.card img {
+  height: fit-content;
+  height: 600px;
+}
+
+.card-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  clip-path: circle(30%);
+  transition-property: clip-path;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+}
+.card-mapimg {
+  height: fit-content;
+  height: 500px;
+}
+.card-map:hover {
+  clip-path: circle(100%);
+}
+
+.cards-espe {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.btn {
+  filter: opacity(85%);
+}
+.btn:hover {
+  background-color: rgb(27, 112, 79);
+  font-weight: bolder;
+}
+
+.boton, .botonContacto {
+  background-color: rgb(165, 179, 171);
+  text-align: center;
+  color: rgb(9, 77, 122);
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 2px;
+}
+.boton:hover, .botonContacto:hover {
+  color: paleturquoise;
+  background-color: rgb(202, 106, 76);
+}
+.boton:active, .botonContacto:active {
+  color: rgb(202, 106, 76);
+  background-color: paleturquoise;
+}
+
+.botonContacto {
+  background-color: rgb(219, 204, 117);
+  color: rgb(101, 146, 172);
+}
+.botonContacto:active {
+  color: rgb(219, 204, 117);
+  background-color: rgb(101, 146, 172);
+}
+
+footer {
+  background-color: rgb(85, 156, 132);
+}
+footer a {
+  font-size: 1.5rem;
+}
+footer li:hover {
+  transform: scale(1.5);
+  transition: all 1s linear;
+}
+
+.col-1 {
+  width: 10%;
+}
+
+.col-2 {
+  width: 20%;
+}
+
+.col-3 {
+  width: 30%;
+}
+
+.col-4 {
+  width: 40%;
+}
+
+.col-5 {
+  width: 50%;
+}
+
+.col-6 {
+  width: 60%;
+}
+
+.col-7 {
+  width: 70%;
+}
+
+.col-8 {
+  width: 80%;
+}
+
+.col-9 {
+  width: 90%;
+}
+
+.col-10 {
+  width: 100%;
+}
+
+.red {
+  color: red;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.green {
+  color: green;
+}
+
+.blue {
+  color: blue;
+}
+
+.botonInstagram {
+  color: red;
+}
+
+.botonFacebook {
+  color: blue;
+}
+
+.botonWhatsapp {
+  color: green;
+}
+
+.botonUbicacion {
+  color: yellow;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,30 @@
+.card img {
+    height: fit-content;
+    height: 600px;
+}
+
+.card-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    clip-path: circle(30%);
+    transition-property: clip-path;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+
+    &img {
+        height: fit-content;
+        height: 500px;
+    }
+
+    &:hover{
+        clip-path: circle(100%);
+    }
+}
+
+.cards-espe {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}

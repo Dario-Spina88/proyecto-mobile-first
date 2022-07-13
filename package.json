@@ -1,0 +1,22 @@
+{
+  "name": "proyecto-git",
+  "version": "1.0.0",
+  "description": "sass",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dario-Spina88/proyecyo-mobile-first.git"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "Dario",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dario-Spina88/proyecyo-mobile-first/issues"
+  },
+  "homepage": "https://github.com/Dario-Spina88/proyecyo-mobile-first#readme"
+}
