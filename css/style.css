@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
 }
 
 ul {
@@ -73,9 +75,28 @@ li {
   color: black;
 }
 
+.contenedor {
+  padding-bottom: 25px;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.contenedor > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .card img {
-  height: fit-content;
-  height: 600px;
+  overflow-x: hidden;
+  height: 400px;
+  width: 100%;
+}
+
+.card-index {
+  transition: scale 150ms ease;
 }
 
 .card-map {
@@ -88,7 +109,7 @@ li {
   transition-duration: 2s;
   transition-timing-function: linear;
 }
-.card-mapimg {
+.card-map, .card-map img {
   height: fit-content;
   height: 500px;
 }
@@ -101,7 +122,31 @@ li {
   justify-content: center;
   align-content: center;
 }
+.cards-espe p {
+  font-size: 1.2rem;
+}
 
+.contenedor-cards {
+  display: flex;
+  background-color: rgb(52, 158, 158);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.contenedor-cards h3 {
+  margin: 10px;
+}
+.contenedor-cards p {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 900px) {
+  .contenedor {
+    overflow: hidden;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
 .btn {
   filter: opacity(85%);
 }
@@ -218,4 +263,5 @@ footer li:hover {
 .botonUbicacion {
   color: yellow;
 }
+
 /*# sourceMappingURL=style.css.map */

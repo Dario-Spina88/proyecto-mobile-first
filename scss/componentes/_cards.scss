@@ -1,8 +1,14 @@
 .card img {
-    height: fit-content;
-    height: 600px;
+    overflow-x: hidden;
+    height: 400px;
+    width: 100%;
 }
 
+.card-index {
+    transition: scale 150ms ease;
+}
+
+// -----------contacto------------
 .card-map {
     display: flex;
     justify-content: center;
@@ -13,7 +19,7 @@
     transition-duration: 2s;
     transition-timing-function: linear;
 
-    &img {
+    &, img {
         height: fit-content;
         height: 500px;
     }
@@ -23,8 +29,26 @@
     }
 }
 
+// --------Especialidades-----------
 .cards-espe {
     display: flex;
     justify-content: center;
     align-content: center;
+    & p{
+        font-size: 1.2rem;
+    }
+}
+
+.contenedor-cards{
+    display: flex;
+    background-color: rgb(52, 158, 158);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    & h3{
+        margin: 10px;
+    }
+    & p{
+        font-size: 1.2rem;
+    }
 }
