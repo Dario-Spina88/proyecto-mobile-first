@@ -11,7 +11,7 @@
 
 .card-index {
     transition: scale 150ms ease;
-    width: 70%;
+    width: 400px;
 }
 
 // -----------contacto------------
@@ -47,17 +47,26 @@
 }
 
 // --------Profesionales-----------
-.contenedor-cards{
-    object-fit:cover;
+.contenedor-cards, .contenedor-cards1{
+    object-fit:none;
     display: flex;
     background-color: rgb(52, 158, 158);
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
+    & img{
+    width: 400px;
+    height: 300px;
+    }
     & h3{
         margin: 10px;
     }
     & p{
         font-size: 1.2rem;
     }
+}
+
+.contenedor-cards1 img{
+    width: 300px;
+    height: 300px;
 }

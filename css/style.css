@@ -50,6 +50,8 @@ a {
 }
 
 .navbar {
+  padding: 0;
+  margin: 0;
   background: linear-gradient(79deg, rgb(2, 0, 36) 0%, rgba(3, 146, 212, 0.812762605) 57%, rgb(0, 212, 255) 100%);
   position: sticky;
   top: 0;
@@ -69,7 +71,7 @@ a {
 
 @keyframes logoEnMovimiento {
   0% {
-    left: -150px;
+    left: -20px;
   }
   100% {
     left: 150px;
@@ -113,7 +115,7 @@ a {
 
 .card-index {
   transition: scale 150ms ease;
-  width: 70%;
+  width: 400px;
 }
 
 .card-map {
@@ -144,19 +146,28 @@ a {
   font-size: 1.2rem;
 }
 
-.contenedor-cards {
-  object-fit: cover;
+.contenedor-cards, .contenedor-cards1 {
+  object-fit: none;
   display: flex;
   background-color: rgb(52, 158, 158);
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
 }
-.contenedor-cards h3 {
+.contenedor-cards img, .contenedor-cards1 img {
+  width: 400px;
+  height: 300px;
+}
+.contenedor-cards h3, .contenedor-cards1 h3 {
   margin: 10px;
 }
-.contenedor-cards p {
+.contenedor-cards p, .contenedor-cards1 p {
   font-size: 1.2rem;
+}
+
+.contenedor-cards1 img {
+  width: 300px;
+  height: 300px;
 }
 
 @media (max-width: 900px) {
