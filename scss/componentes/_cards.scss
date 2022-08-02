@@ -4,8 +4,14 @@
     width: 100%;
 }
 
+// -----------Index------------
+.card-nos{
+    width: 100%;
+}
+
 .card-index {
     transition: scale 150ms ease;
+    width: 70%;
 }
 
 // -----------contacto------------
@@ -31,6 +37,7 @@
 
 // --------Especialidades-----------
 .cards-espe {
+    width: 70%;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -39,7 +46,9 @@
     }
 }
 
+// --------Profesionales-----------
 .contenedor-cards{
+    object-fit:cover;
     display: flex;
     background-color: rgb(52, 158, 158);
     margin: 10px;
